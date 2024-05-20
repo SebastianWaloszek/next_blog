@@ -6,10 +6,10 @@ import 'package:next_photo/src/common/presentation/widgets/alert/app_snack_bars.
 class AppIconButton extends StatelessWidget {
   /// Creates an icon button.
   const AppIconButton({
-    Key? key,
+    super.key,
     this.onPressed,
     required this.icon,
-  }) : super(key: key);
+  });
 
   /// Callback to call when user taps the button.
   final VoidCallback? onPressed;

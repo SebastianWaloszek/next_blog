@@ -13,7 +13,7 @@ abstract class InjectorModule {
 
   /// Injects a new instance of [SharedPreferences].
   @preResolve
-  Future<SharedPreferences> get prefs => SharedPreferences.getInstance();
+  Future<SharedPreferences> getPrefs() => SharedPreferences.getInstance();
 
   /// Inject a new custom HTTP client instance.
   @LazySingleton(as: Dio)

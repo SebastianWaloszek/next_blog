@@ -18,5 +18,5 @@ class Album with _$Album {
 /// The id of an album.
 class AlbumId extends Id<int> {
   /// Creates an album id for a specific [value].
-  const AlbumId(int value) : super(value);
+  const AlbumId(super.value);
 }

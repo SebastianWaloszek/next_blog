@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'photos_cubit.dart';
 
@@ -12,7 +12,7 @@ part of 'photos_cubit.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PhotosState {
@@ -26,10 +26,10 @@ mixin _$PhotosState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<Photo>? currentPhotos)? inProgress,
-    TResult Function(List<Photo> photos)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(List<Photo>? currentPhotos)? inProgress,
+    TResult? Function(List<Photo> photos)? success,
+    TResult? Function(Failure failure)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$PhotosState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotosInitialState value)? initial,
-    TResult Function(_PhotosInProgressState value)? inProgress,
-    TResult Function(_PhotosSuccessState value)? success,
-    TResult Function(_PhotosFailureState value)? failure,
+    TResult? Function(_PhotosInitialState value)? initial,
+    TResult? Function(_PhotosInProgressState value)? inProgress,
+    TResult? Function(_PhotosSuccessState value)? success,
+    TResult? Function(_PhotosFailureState value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,41 +72,40 @@ mixin _$PhotosState {
 abstract class $PhotosStateCopyWith<$Res> {
   factory $PhotosStateCopyWith(
           PhotosState value, $Res Function(PhotosState) then) =
-      _$PhotosStateCopyWithImpl<$Res>;
+      _$PhotosStateCopyWithImpl<$Res, PhotosState>;
 }
 
 /// @nodoc
-class _$PhotosStateCopyWithImpl<$Res> implements $PhotosStateCopyWith<$Res> {
+class _$PhotosStateCopyWithImpl<$Res, $Val extends PhotosState>
+    implements $PhotosStateCopyWith<$Res> {
   _$PhotosStateCopyWithImpl(this._value, this._then);
 
-  final PhotosState _value;
   // ignore: unused_field
-  final $Res Function(PhotosState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_PhotosInitialStateCopyWith<$Res> {
-  factory _$$_PhotosInitialStateCopyWith(_$_PhotosInitialState value,
-          $Res Function(_$_PhotosInitialState) then) =
-      __$$_PhotosInitialStateCopyWithImpl<$Res>;
+abstract class _$$PhotosInitialStateImplCopyWith<$Res> {
+  factory _$$PhotosInitialStateImplCopyWith(_$PhotosInitialStateImpl value,
+          $Res Function(_$PhotosInitialStateImpl) then) =
+      __$$PhotosInitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PhotosInitialStateCopyWithImpl<$Res>
-    extends _$PhotosStateCopyWithImpl<$Res>
-    implements _$$_PhotosInitialStateCopyWith<$Res> {
-  __$$_PhotosInitialStateCopyWithImpl(
-      _$_PhotosInitialState _value, $Res Function(_$_PhotosInitialState) _then)
-      : super(_value, (v) => _then(v as _$_PhotosInitialState));
-
-  @override
-  _$_PhotosInitialState get _value => super._value as _$_PhotosInitialState;
+class __$$PhotosInitialStateImplCopyWithImpl<$Res>
+    extends _$PhotosStateCopyWithImpl<$Res, _$PhotosInitialStateImpl>
+    implements _$$PhotosInitialStateImplCopyWith<$Res> {
+  __$$PhotosInitialStateImplCopyWithImpl(_$PhotosInitialStateImpl _value,
+      $Res Function(_$PhotosInitialStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PhotosInitialState implements _PhotosInitialState {
-  const _$_PhotosInitialState();
+class _$PhotosInitialStateImpl implements _PhotosInitialState {
+  const _$PhotosInitialStateImpl();
 
   @override
   String toString() {
@@ -114,9 +113,9 @@ class _$_PhotosInitialState implements _PhotosInitialState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PhotosInitialState);
+        (other.runtimeType == runtimeType && other is _$PhotosInitialStateImpl);
   }
 
   @override
@@ -136,10 +135,10 @@ class _$_PhotosInitialState implements _PhotosInitialState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<Photo>? currentPhotos)? inProgress,
-    TResult Function(List<Photo> photos)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(List<Photo>? currentPhotos)? inProgress,
+    TResult? Function(List<Photo> photos)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return initial?.call();
   }
@@ -173,10 +172,10 @@ class _$_PhotosInitialState implements _PhotosInitialState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotosInitialState value)? initial,
-    TResult Function(_PhotosInProgressState value)? inProgress,
-    TResult Function(_PhotosSuccessState value)? success,
-    TResult Function(_PhotosFailureState value)? failure,
+    TResult? Function(_PhotosInitialState value)? initial,
+    TResult? Function(_PhotosInProgressState value)? inProgress,
+    TResult? Function(_PhotosSuccessState value)? success,
+    TResult? Function(_PhotosFailureState value)? failure,
   }) {
     return initial?.call(this);
   }
@@ -198,35 +197,34 @@ class _$_PhotosInitialState implements _PhotosInitialState {
 }
 
 abstract class _PhotosInitialState implements PhotosState {
-  const factory _PhotosInitialState() = _$_PhotosInitialState;
+  const factory _PhotosInitialState() = _$PhotosInitialStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_PhotosInProgressStateCopyWith<$Res> {
-  factory _$$_PhotosInProgressStateCopyWith(_$_PhotosInProgressState value,
-          $Res Function(_$_PhotosInProgressState) then) =
-      __$$_PhotosInProgressStateCopyWithImpl<$Res>;
+abstract class _$$PhotosInProgressStateImplCopyWith<$Res> {
+  factory _$$PhotosInProgressStateImplCopyWith(
+          _$PhotosInProgressStateImpl value,
+          $Res Function(_$PhotosInProgressStateImpl) then) =
+      __$$PhotosInProgressStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Photo>? currentPhotos});
 }
 
 /// @nodoc
-class __$$_PhotosInProgressStateCopyWithImpl<$Res>
-    extends _$PhotosStateCopyWithImpl<$Res>
-    implements _$$_PhotosInProgressStateCopyWith<$Res> {
-  __$$_PhotosInProgressStateCopyWithImpl(_$_PhotosInProgressState _value,
-      $Res Function(_$_PhotosInProgressState) _then)
-      : super(_value, (v) => _then(v as _$_PhotosInProgressState));
+class __$$PhotosInProgressStateImplCopyWithImpl<$Res>
+    extends _$PhotosStateCopyWithImpl<$Res, _$PhotosInProgressStateImpl>
+    implements _$$PhotosInProgressStateImplCopyWith<$Res> {
+  __$$PhotosInProgressStateImplCopyWithImpl(_$PhotosInProgressStateImpl _value,
+      $Res Function(_$PhotosInProgressStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PhotosInProgressState get _value =>
-      super._value as _$_PhotosInProgressState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? currentPhotos = freezed,
   }) {
-    return _then(_$_PhotosInProgressState(
-      currentPhotos: currentPhotos == freezed
+    return _then(_$PhotosInProgressStateImpl(
+      currentPhotos: freezed == currentPhotos
           ? _value._currentPhotos
           : currentPhotos // ignore: cast_nullable_to_non_nullable
               as List<Photo>?,
@@ -236,8 +234,8 @@ class __$$_PhotosInProgressStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotosInProgressState implements _PhotosInProgressState {
-  const _$_PhotosInProgressState({final List<Photo>? currentPhotos})
+class _$PhotosInProgressStateImpl implements _PhotosInProgressState {
+  const _$PhotosInProgressStateImpl({final List<Photo>? currentPhotos})
       : _currentPhotos = currentPhotos;
 
   final List<Photo>? _currentPhotos;
@@ -245,6 +243,7 @@ class _$_PhotosInProgressState implements _PhotosInProgressState {
   List<Photo>? get currentPhotos {
     final value = _currentPhotos;
     if (value == null) return null;
+    if (_currentPhotos is EqualUnmodifiableListView) return _currentPhotos;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(value);
   }
@@ -255,10 +254,10 @@ class _$_PhotosInProgressState implements _PhotosInProgressState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PhotosInProgressState &&
+            other is _$PhotosInProgressStateImpl &&
             const DeepCollectionEquality()
                 .equals(other._currentPhotos, _currentPhotos));
   }
@@ -269,9 +268,10 @@ class _$_PhotosInProgressState implements _PhotosInProgressState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotosInProgressStateCopyWith<_$_PhotosInProgressState> get copyWith =>
-      __$$_PhotosInProgressStateCopyWithImpl<_$_PhotosInProgressState>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotosInProgressStateImplCopyWith<_$PhotosInProgressStateImpl>
+      get copyWith => __$$PhotosInProgressStateImplCopyWithImpl<
+          _$PhotosInProgressStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -287,10 +287,10 @@ class _$_PhotosInProgressState implements _PhotosInProgressState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<Photo>? currentPhotos)? inProgress,
-    TResult Function(List<Photo> photos)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(List<Photo>? currentPhotos)? inProgress,
+    TResult? Function(List<Photo> photos)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return inProgress?.call(currentPhotos);
   }
@@ -324,10 +324,10 @@ class _$_PhotosInProgressState implements _PhotosInProgressState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotosInitialState value)? initial,
-    TResult Function(_PhotosInProgressState value)? inProgress,
-    TResult Function(_PhotosSuccessState value)? success,
-    TResult Function(_PhotosFailureState value)? failure,
+    TResult? Function(_PhotosInitialState value)? initial,
+    TResult? Function(_PhotosInProgressState value)? inProgress,
+    TResult? Function(_PhotosSuccessState value)? success,
+    TResult? Function(_PhotosFailureState value)? failure,
   }) {
     return inProgress?.call(this);
   }
@@ -350,39 +350,38 @@ class _$_PhotosInProgressState implements _PhotosInProgressState {
 
 abstract class _PhotosInProgressState implements PhotosState {
   const factory _PhotosInProgressState({final List<Photo>? currentPhotos}) =
-      _$_PhotosInProgressState;
+      _$PhotosInProgressStateImpl;
 
-  List<Photo>? get currentPhotos => throw _privateConstructorUsedError;
+  List<Photo>? get currentPhotos;
   @JsonKey(ignore: true)
-  _$$_PhotosInProgressStateCopyWith<_$_PhotosInProgressState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PhotosInProgressStateImplCopyWith<_$PhotosInProgressStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PhotosSuccessStateCopyWith<$Res> {
-  factory _$$_PhotosSuccessStateCopyWith(_$_PhotosSuccessState value,
-          $Res Function(_$_PhotosSuccessState) then) =
-      __$$_PhotosSuccessStateCopyWithImpl<$Res>;
+abstract class _$$PhotosSuccessStateImplCopyWith<$Res> {
+  factory _$$PhotosSuccessStateImplCopyWith(_$PhotosSuccessStateImpl value,
+          $Res Function(_$PhotosSuccessStateImpl) then) =
+      __$$PhotosSuccessStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Photo> photos});
 }
 
 /// @nodoc
-class __$$_PhotosSuccessStateCopyWithImpl<$Res>
-    extends _$PhotosStateCopyWithImpl<$Res>
-    implements _$$_PhotosSuccessStateCopyWith<$Res> {
-  __$$_PhotosSuccessStateCopyWithImpl(
-      _$_PhotosSuccessState _value, $Res Function(_$_PhotosSuccessState) _then)
-      : super(_value, (v) => _then(v as _$_PhotosSuccessState));
+class __$$PhotosSuccessStateImplCopyWithImpl<$Res>
+    extends _$PhotosStateCopyWithImpl<$Res, _$PhotosSuccessStateImpl>
+    implements _$$PhotosSuccessStateImplCopyWith<$Res> {
+  __$$PhotosSuccessStateImplCopyWithImpl(_$PhotosSuccessStateImpl _value,
+      $Res Function(_$PhotosSuccessStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PhotosSuccessState get _value => super._value as _$_PhotosSuccessState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? photos = freezed,
+    Object? photos = null,
   }) {
-    return _then(_$_PhotosSuccessState(
-      photos == freezed
+    return _then(_$PhotosSuccessStateImpl(
+      null == photos
           ? _value._photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<Photo>,
@@ -392,12 +391,13 @@ class __$$_PhotosSuccessStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotosSuccessState implements _PhotosSuccessState {
-  const _$_PhotosSuccessState(final List<Photo> photos) : _photos = photos;
+class _$PhotosSuccessStateImpl implements _PhotosSuccessState {
+  const _$PhotosSuccessStateImpl(final List<Photo> photos) : _photos = photos;
 
   final List<Photo> _photos;
   @override
   List<Photo> get photos {
+    if (_photos is EqualUnmodifiableListView) return _photos;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_photos);
   }
@@ -408,10 +408,10 @@ class _$_PhotosSuccessState implements _PhotosSuccessState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PhotosSuccessState &&
+            other is _$PhotosSuccessStateImpl &&
             const DeepCollectionEquality().equals(other._photos, _photos));
   }
 
@@ -421,8 +421,9 @@ class _$_PhotosSuccessState implements _PhotosSuccessState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotosSuccessStateCopyWith<_$_PhotosSuccessState> get copyWith =>
-      __$$_PhotosSuccessStateCopyWithImpl<_$_PhotosSuccessState>(
+  @pragma('vm:prefer-inline')
+  _$$PhotosSuccessStateImplCopyWith<_$PhotosSuccessStateImpl> get copyWith =>
+      __$$PhotosSuccessStateImplCopyWithImpl<_$PhotosSuccessStateImpl>(
           this, _$identity);
 
   @override
@@ -439,10 +440,10 @@ class _$_PhotosSuccessState implements _PhotosSuccessState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<Photo>? currentPhotos)? inProgress,
-    TResult Function(List<Photo> photos)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(List<Photo>? currentPhotos)? inProgress,
+    TResult? Function(List<Photo> photos)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return success?.call(photos);
   }
@@ -476,10 +477,10 @@ class _$_PhotosSuccessState implements _PhotosSuccessState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotosInitialState value)? initial,
-    TResult Function(_PhotosInProgressState value)? inProgress,
-    TResult Function(_PhotosSuccessState value)? success,
-    TResult Function(_PhotosFailureState value)? failure,
+    TResult? Function(_PhotosInitialState value)? initial,
+    TResult? Function(_PhotosInProgressState value)? inProgress,
+    TResult? Function(_PhotosSuccessState value)? success,
+    TResult? Function(_PhotosFailureState value)? failure,
   }) {
     return success?.call(this);
   }
@@ -502,41 +503,40 @@ class _$_PhotosSuccessState implements _PhotosSuccessState {
 
 abstract class _PhotosSuccessState implements PhotosState {
   const factory _PhotosSuccessState(final List<Photo> photos) =
-      _$_PhotosSuccessState;
+      _$PhotosSuccessStateImpl;
 
-  List<Photo> get photos => throw _privateConstructorUsedError;
+  List<Photo> get photos;
   @JsonKey(ignore: true)
-  _$$_PhotosSuccessStateCopyWith<_$_PhotosSuccessState> get copyWith =>
+  _$$PhotosSuccessStateImplCopyWith<_$PhotosSuccessStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PhotosFailureStateCopyWith<$Res> {
-  factory _$$_PhotosFailureStateCopyWith(_$_PhotosFailureState value,
-          $Res Function(_$_PhotosFailureState) then) =
-      __$$_PhotosFailureStateCopyWithImpl<$Res>;
+abstract class _$$PhotosFailureStateImplCopyWith<$Res> {
+  factory _$$PhotosFailureStateImplCopyWith(_$PhotosFailureStateImpl value,
+          $Res Function(_$PhotosFailureStateImpl) then) =
+      __$$PhotosFailureStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Failure failure});
 
   $FailureCopyWith<$Res> get failure;
 }
 
 /// @nodoc
-class __$$_PhotosFailureStateCopyWithImpl<$Res>
-    extends _$PhotosStateCopyWithImpl<$Res>
-    implements _$$_PhotosFailureStateCopyWith<$Res> {
-  __$$_PhotosFailureStateCopyWithImpl(
-      _$_PhotosFailureState _value, $Res Function(_$_PhotosFailureState) _then)
-      : super(_value, (v) => _then(v as _$_PhotosFailureState));
+class __$$PhotosFailureStateImplCopyWithImpl<$Res>
+    extends _$PhotosStateCopyWithImpl<$Res, _$PhotosFailureStateImpl>
+    implements _$$PhotosFailureStateImplCopyWith<$Res> {
+  __$$PhotosFailureStateImplCopyWithImpl(_$PhotosFailureStateImpl _value,
+      $Res Function(_$PhotosFailureStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PhotosFailureState get _value => super._value as _$_PhotosFailureState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? failure = freezed,
+    Object? failure = null,
   }) {
-    return _then(_$_PhotosFailureState(
-      failure == freezed
+    return _then(_$PhotosFailureStateImpl(
+      null == failure
           ? _value.failure
           : failure // ignore: cast_nullable_to_non_nullable
               as Failure,
@@ -544,6 +544,7 @@ class __$$_PhotosFailureStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $FailureCopyWith<$Res> get failure {
     return $FailureCopyWith<$Res>(_value.failure, (value) {
       return _then(_value.copyWith(failure: value));
@@ -553,8 +554,8 @@ class __$$_PhotosFailureStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotosFailureState implements _PhotosFailureState {
-  const _$_PhotosFailureState(this.failure);
+class _$PhotosFailureStateImpl implements _PhotosFailureState {
+  const _$PhotosFailureStateImpl(this.failure);
 
   @override
   final Failure failure;
@@ -565,21 +566,21 @@ class _$_PhotosFailureState implements _PhotosFailureState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PhotosFailureState &&
-            const DeepCollectionEquality().equals(other.failure, failure));
+            other is _$PhotosFailureStateImpl &&
+            (identical(other.failure, failure) || other.failure == failure));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(failure));
+  int get hashCode => Object.hash(runtimeType, failure);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotosFailureStateCopyWith<_$_PhotosFailureState> get copyWith =>
-      __$$_PhotosFailureStateCopyWithImpl<_$_PhotosFailureState>(
+  @pragma('vm:prefer-inline')
+  _$$PhotosFailureStateImplCopyWith<_$PhotosFailureStateImpl> get copyWith =>
+      __$$PhotosFailureStateImplCopyWithImpl<_$PhotosFailureStateImpl>(
           this, _$identity);
 
   @override
@@ -596,10 +597,10 @@ class _$_PhotosFailureState implements _PhotosFailureState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(List<Photo>? currentPhotos)? inProgress,
-    TResult Function(List<Photo> photos)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(List<Photo>? currentPhotos)? inProgress,
+    TResult? Function(List<Photo> photos)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return failure?.call(this.failure);
   }
@@ -633,10 +634,10 @@ class _$_PhotosFailureState implements _PhotosFailureState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotosInitialState value)? initial,
-    TResult Function(_PhotosInProgressState value)? inProgress,
-    TResult Function(_PhotosSuccessState value)? success,
-    TResult Function(_PhotosFailureState value)? failure,
+    TResult? Function(_PhotosInitialState value)? initial,
+    TResult? Function(_PhotosInProgressState value)? inProgress,
+    TResult? Function(_PhotosSuccessState value)? success,
+    TResult? Function(_PhotosFailureState value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -659,10 +660,10 @@ class _$_PhotosFailureState implements _PhotosFailureState {
 
 abstract class _PhotosFailureState implements PhotosState {
   const factory _PhotosFailureState(final Failure failure) =
-      _$_PhotosFailureState;
+      _$PhotosFailureStateImpl;
 
-  Failure get failure => throw _privateConstructorUsedError;
+  Failure get failure;
   @JsonKey(ignore: true)
-  _$$_PhotosFailureStateCopyWith<_$_PhotosFailureState> get copyWith =>
+  _$$PhotosFailureStateImplCopyWith<_$PhotosFailureStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -3,9 +3,8 @@ import 'package:next_photo/src/common/presentation/localization/localization.dar
 
 class LocalizedMaterialApp extends StatelessWidget {
   const LocalizedMaterialApp({
-    Key? key,
     required this.child,
-  }) : super(key: key);
+  });
 
   final Widget child;
 

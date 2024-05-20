@@ -35,5 +35,4 @@ const _photo = Photo(
   title: 'title',
   url: 'https://picsum.photos/id/1/1200/1200',
   thumbnailUrl: 'https://picsum.photos/id/1/600/600',
-  isLiked: false,
 );

@@ -24,10 +24,10 @@ class UserRepositoryImpl implements UserRepository {
   Future<Result<List<User>>> getAllUsers() async {
     try {
       final userModels = await _dataSource.getAllUsers();
-      final users = userModels.map<User>(UserFromModel()).toList();
+      final users = userModels.map<User>(UserFromModel().call).toList();
       return Result(users);
     } catch (e, s) {
-      _logger.e('Getting all users has failed!', e, s);
+      _logger.e('Getting all users has failed!', error: e, stackTrace: s);
       return Result.failure(Failure(e, s));
     }
   }
@@ -39,7 +39,11 @@ class UserRepositoryImpl implements UserRepository {
       final user = UserFromModel()(userModel);
       return Result(user);
     } catch (e, s) {
-      _logger.e('Getting user ${userId.value} has failed!', e, s);
+      _logger.e(
+        'Getting user ${userId.value} has failed!',
+        error: e,
+        stackTrace: s,
+      );
       return Result.failure(Failure(e, s));
     }
   }

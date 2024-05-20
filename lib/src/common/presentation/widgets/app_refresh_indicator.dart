@@ -5,10 +5,10 @@ import 'package:next_photo/common.dart';
 class AppRefreshIndicator extends StatelessWidget {
   /// Creates a refresh indicator.
   const AppRefreshIndicator({
-    Key? key,
+    super.key,
     required this.onRefresh,
     required this.child,
-  }) : super(key: key);
+  });
 
   /// A callback that's called when the user has dragged the refresh indicator.
   final RefreshCallback onRefresh;

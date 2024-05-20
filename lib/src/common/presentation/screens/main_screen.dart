@@ -12,7 +12,7 @@ import 'package:next_photo/src/features/users/presentation/widget/user_profile_i
 /// The primary screen with bottom navigation.
 class MainScreen extends StatefulWidget {
   /// Creates screen.
-  const MainScreen({Key? key}) : super(key: key);
+  const MainScreen({super.key});
 
   @override
   State<MainScreen> createState() => _MainScreenState();
@@ -44,9 +44,7 @@ class _MainScreenState extends State<MainScreen> {
 }
 
 class _BottomNavigationBar extends StatelessWidget {
-  const _BottomNavigationBar({
-    Key? key,
-  }) : super(key: key);
+  const _BottomNavigationBar();
 
   @override
   Widget build(BuildContext context) {

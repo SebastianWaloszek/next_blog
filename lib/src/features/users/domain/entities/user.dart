@@ -22,7 +22,7 @@ class User with _$User {
 /// The id of a user.
 class UserId extends Id<int> {
   /// Creates a user id for a specific [value].
-  const UserId(int value) : super(value);
+  const UserId(super.value);
 }
 
 /// An address for a location.

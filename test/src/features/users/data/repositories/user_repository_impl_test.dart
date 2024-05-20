@@ -60,8 +60,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting all users has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);
@@ -102,8 +102,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting user 1 has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);

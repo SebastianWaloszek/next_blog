@@ -15,3 +15,4 @@
      sort_constructors_first: true
      depend_on_referenced_packages: false
      public_member_api_docs: true
+     unnecessary_library_directive: false

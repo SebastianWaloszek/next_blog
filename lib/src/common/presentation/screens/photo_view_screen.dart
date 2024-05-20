@@ -6,9 +6,8 @@ import 'package:photo_view/photo_view.dart';
 /// A screen for viewing a photo in full resolution and with zoom.
 class PhotoViewScreen extends StatelessWidget {
   const PhotoViewScreen._({
-    Key? key,
     required this.photoUrl,
-  }) : super(key: key);
+  });
 
   /// Url of photo to show.
   final String photoUrl;

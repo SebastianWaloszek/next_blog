@@ -4,7 +4,7 @@ import 'package:next_photo/src/common/presentation/theme/app_colors.dart';
 /// A thin horizontal line for dividing content.
 class VerticalDivider extends StatelessWidget {
   /// Creates a vertical divider.
-  const VerticalDivider({Key? key}) : super(key: key);
+  const VerticalDivider({super.key});
 
   @override
   Widget build(BuildContext context) {

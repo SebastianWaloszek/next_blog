@@ -17,13 +17,13 @@ import 'package:next_photo/src/features/users/presentation/cubits/users/users_cu
 /// The screen with photo feed and stories.
 class HomeScreen extends StatelessWidget {
   /// Creates screen.
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return AppScreen(
+    return const AppScreen(
       body: Column(
-        children: const [
+        children: [
           _TopNavigationBar(),
           Expanded(
             child: _ContentScrollView(),
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _TopNavigationBar extends StatelessWidget {
-  const _TopNavigationBar({Key? key}) : super(key: key);
+  const _TopNavigationBar();
 
   @override
   Widget build(BuildContext context) {
@@ -44,12 +44,12 @@ class _TopNavigationBar extends StatelessWidget {
         horizontal: AppDimens.contentPaddingHorizontal,
         vertical: AppDimens.contentPaddingVertical,
       ),
-      child: Row(
+      child: const Row(
         children: [
-          const AppLogo(),
-          const Spacer(),
+          AppLogo(),
+          Spacer(),
           Row(
-            children: const [
+            children: [
               AppIconButton(
                 icon: AppIcons.heart,
               ),
@@ -70,7 +70,7 @@ class _TopNavigationBar extends StatelessWidget {
 }
 
 class _ContentScrollView extends StatelessWidget {
-  const _ContentScrollView({Key? key}) : super(key: key);
+  const _ContentScrollView();
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +88,7 @@ class _ContentScrollView extends StatelessWidget {
                 SliverToBoxAdapter(
                   child: VerticalDivider(),
                 ),
-                _PhotoList()
+                _PhotoList(),
               ],
             ),
           );
@@ -100,7 +100,7 @@ class _ContentScrollView extends StatelessWidget {
 
 // TODO: Implement stories mock.
 class _UserStoriesList extends StatelessWidget {
-  const _UserStoriesList({Key? key}) : super(key: key);
+  const _UserStoriesList();
 
   @override
   Widget build(BuildContext context) {
@@ -135,7 +135,7 @@ class _UserStoriesList extends StatelessWidget {
 }
 
 class _PhotoList extends StatelessWidget {
-  const _PhotoList({Key? key}) : super(key: key);
+  const _PhotoList();
 
   @override
   Widget build(BuildContext context) {

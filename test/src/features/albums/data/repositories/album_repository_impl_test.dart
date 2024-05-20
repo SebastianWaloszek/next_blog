@@ -61,8 +61,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting all albums has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);
@@ -107,8 +107,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting album ${albumId1.value} has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);
@@ -153,8 +153,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting albums for user ${userId1.value} has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);

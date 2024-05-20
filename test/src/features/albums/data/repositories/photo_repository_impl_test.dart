@@ -96,8 +96,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting all photos has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);
@@ -142,8 +142,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting photo ${photoId1.value} has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);
@@ -188,8 +188,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Getting photos for album ${albumId1.value} has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);
@@ -246,8 +246,8 @@ void main() {
               verify(
                 () => logger.e(
                   'Updating photo like for photo ${photoId1.value} with true has failed!',
-                  'Failure',
-                  any(),
+                  error: 'Failure',
+                  stackTrace: any(),
                 ),
               ).called(1);
               verifyNoMoreInteractions(logger);

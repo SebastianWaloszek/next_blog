@@ -25,10 +25,10 @@ class AlbumRepositoryImpl implements AlbumRepository {
   Future<Result<List<Album>>> getAllAlbums() async {
     try {
       final albumModels = await _dataSource.getAllAlbums();
-      final albums = albumModels.map<Album>(AlbumFromModel()).toList();
+      final albums = albumModels.map<Album>(AlbumFromModel().call).toList();
       return Result(albums);
     } catch (e, s) {
-      _logger.e('Getting all albums has failed!', e, s);
+      _logger.e('Getting all albums has failed!', error: e, stackTrace: s);
       return Result.failure(Failure(e, s));
     }
   }
@@ -40,7 +40,11 @@ class AlbumRepositoryImpl implements AlbumRepository {
       final album = AlbumFromModel()(albumModel);
       return Result(album);
     } catch (e, s) {
-      _logger.e('Getting album ${albumId.value} has failed!', e, s);
+      _logger.e(
+        'Getting album ${albumId.value} has failed!',
+        error: e,
+        stackTrace: s,
+      );
       return Result.failure(Failure(e, s));
     }
   }
@@ -51,10 +55,14 @@ class AlbumRepositoryImpl implements AlbumRepository {
       final albumModels = await _dataSource.getUserAlbums(
         userId: userId.value,
       );
-      final albums = albumModels.map<Album>(AlbumFromModel()).toList();
+      final albums = albumModels.map<Album>(AlbumFromModel().call).toList();
       return Result(albums);
     } catch (e, s) {
-      _logger.e('Getting albums for user ${userId.value} has failed!', e, s);
+      _logger.e(
+        'Getting albums for user ${userId.value} has failed!',
+        error: e,
+        stackTrace: s,
+      );
       return Result.failure(Failure(e, s));
     }
   }

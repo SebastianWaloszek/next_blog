@@ -5,13 +5,13 @@ import 'package:flutter/services.dart';
 class AppScreen extends StatelessWidget {
   /// Creates an app screen.
   const AppScreen({
-    Key? key,
+    super.key,
     required this.body,
     this.backgroundColor,
     this.systemOverlayStyle,
     this.appBar,
     this.bottomNavigationBar,
-  }) : super(key: key);
+  });
 
   /// The body of the screen.
   final Widget body;

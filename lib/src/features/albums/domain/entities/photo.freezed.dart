@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'photo.dart';
 
@@ -12,7 +12,7 @@ part of 'photo.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Photo {
@@ -30,7 +30,8 @@ mixin _$Photo {
 /// @nodoc
 abstract class $PhotoCopyWith<$Res> {
   factory $PhotoCopyWith(Photo value, $Res Function(Photo) then) =
-      _$PhotoCopyWithImpl<$Res>;
+      _$PhotoCopyWithImpl<$Res, Photo>;
+  @useResult
   $Res call(
       {PhotoId id,
       AlbumId albumId,
@@ -41,56 +42,61 @@ abstract class $PhotoCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PhotoCopyWithImpl<$Res> implements $PhotoCopyWith<$Res> {
+class _$PhotoCopyWithImpl<$Res, $Val extends Photo>
+    implements $PhotoCopyWith<$Res> {
   _$PhotoCopyWithImpl(this._value, this._then);
 
-  final Photo _value;
   // ignore: unused_field
-  final $Res Function(Photo) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? albumId = freezed,
-    Object? title = freezed,
-    Object? url = freezed,
-    Object? thumbnailUrl = freezed,
-    Object? isLiked = freezed,
+    Object? id = null,
+    Object? albumId = null,
+    Object? title = null,
+    Object? url = null,
+    Object? thumbnailUrl = null,
+    Object? isLiked = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as PhotoId,
-      albumId: albumId == freezed
+      albumId: null == albumId
           ? _value.albumId
           : albumId // ignore: cast_nullable_to_non_nullable
               as AlbumId,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      thumbnailUrl: thumbnailUrl == freezed
+      thumbnailUrl: null == thumbnailUrl
           ? _value.thumbnailUrl
           : thumbnailUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      isLiked: isLiked == freezed
+      isLiked: null == isLiked
           ? _value.isLiked
           : isLiked // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_PhotoCopyWith<$Res> implements $PhotoCopyWith<$Res> {
-  factory _$$_PhotoCopyWith(_$_Photo value, $Res Function(_$_Photo) then) =
-      __$$_PhotoCopyWithImpl<$Res>;
+abstract class _$$PhotoImplCopyWith<$Res> implements $PhotoCopyWith<$Res> {
+  factory _$$PhotoImplCopyWith(
+          _$PhotoImpl value, $Res Function(_$PhotoImpl) then) =
+      __$$PhotoImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {PhotoId id,
       AlbumId albumId,
@@ -101,45 +107,45 @@ abstract class _$$_PhotoCopyWith<$Res> implements $PhotoCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_PhotoCopyWithImpl<$Res> extends _$PhotoCopyWithImpl<$Res>
-    implements _$$_PhotoCopyWith<$Res> {
-  __$$_PhotoCopyWithImpl(_$_Photo _value, $Res Function(_$_Photo) _then)
-      : super(_value, (v) => _then(v as _$_Photo));
+class __$$PhotoImplCopyWithImpl<$Res>
+    extends _$PhotoCopyWithImpl<$Res, _$PhotoImpl>
+    implements _$$PhotoImplCopyWith<$Res> {
+  __$$PhotoImplCopyWithImpl(
+      _$PhotoImpl _value, $Res Function(_$PhotoImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_Photo get _value => super._value as _$_Photo;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? albumId = freezed,
-    Object? title = freezed,
-    Object? url = freezed,
-    Object? thumbnailUrl = freezed,
-    Object? isLiked = freezed,
+    Object? id = null,
+    Object? albumId = null,
+    Object? title = null,
+    Object? url = null,
+    Object? thumbnailUrl = null,
+    Object? isLiked = null,
   }) {
-    return _then(_$_Photo(
-      id: id == freezed
+    return _then(_$PhotoImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as PhotoId,
-      albumId: albumId == freezed
+      albumId: null == albumId
           ? _value.albumId
           : albumId // ignore: cast_nullable_to_non_nullable
               as AlbumId,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      thumbnailUrl: thumbnailUrl == freezed
+      thumbnailUrl: null == thumbnailUrl
           ? _value.thumbnailUrl
           : thumbnailUrl // ignore: cast_nullable_to_non_nullable
               as String,
-      isLiked: isLiked == freezed
+      isLiked: null == isLiked
           ? _value.isLiked
           : isLiked // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -149,8 +155,8 @@ class __$$_PhotoCopyWithImpl<$Res> extends _$PhotoCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Photo implements _Photo {
-  const _$_Photo(
+class _$PhotoImpl implements _Photo {
+  const _$PhotoImpl(
       {required this.id,
       required this.albumId,
       required this.title,
@@ -178,33 +184,28 @@ class _$_Photo implements _Photo {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Photo &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.albumId, albumId) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.url, url) &&
-            const DeepCollectionEquality()
-                .equals(other.thumbnailUrl, thumbnailUrl) &&
-            const DeepCollectionEquality().equals(other.isLiked, isLiked));
+            other is _$PhotoImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.albumId, albumId) || other.albumId == albumId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.thumbnailUrl, thumbnailUrl) ||
+                other.thumbnailUrl == thumbnailUrl) &&
+            (identical(other.isLiked, isLiked) || other.isLiked == isLiked));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(albumId),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(url),
-      const DeepCollectionEquality().hash(thumbnailUrl),
-      const DeepCollectionEquality().hash(isLiked));
+  int get hashCode =>
+      Object.hash(runtimeType, id, albumId, title, url, thumbnailUrl, isLiked);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotoCopyWith<_$_Photo> get copyWith =>
-      __$$_PhotoCopyWithImpl<_$_Photo>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith =>
+      __$$PhotoImplCopyWithImpl<_$PhotoImpl>(this, _$identity);
 }
 
 abstract class _Photo implements Photo {
@@ -214,22 +215,22 @@ abstract class _Photo implements Photo {
       required final String title,
       required final String url,
       required final String thumbnailUrl,
-      final bool isLiked}) = _$_Photo;
+      final bool isLiked}) = _$PhotoImpl;
 
   @override
-  PhotoId get id => throw _privateConstructorUsedError;
+  PhotoId get id;
   @override
-  AlbumId get albumId => throw _privateConstructorUsedError;
+  AlbumId get albumId;
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
-  String get thumbnailUrl => throw _privateConstructorUsedError;
+  String get thumbnailUrl;
   @override
-  bool get isLiked => throw _privateConstructorUsedError;
+  bool get isLiked;
   @override
   @JsonKey(ignore: true)
-  _$$_PhotoCopyWith<_$_Photo> get copyWith =>
+  _$$PhotoImplCopyWith<_$PhotoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

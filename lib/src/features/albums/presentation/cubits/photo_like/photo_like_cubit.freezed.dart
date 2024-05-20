@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'photo_like_cubit.dart';
 
@@ -12,7 +12,7 @@ part of 'photo_like_cubit.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PhotoLikeState {
@@ -26,10 +26,10 @@ mixin _$PhotoLikeState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(bool like)? inProgress,
-    TResult Function(bool like)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(bool like)? inProgress,
+    TResult? Function(bool like)? success,
+    TResult? Function(Failure failure)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$PhotoLikeState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotoLikeInitialState value)? initial,
-    TResult Function(_PhotoLikeInProgressState value)? inProgress,
-    TResult Function(_PhotoLikeSuccessState value)? success,
-    TResult Function(_PhotoLikeFailureState value)? failure,
+    TResult? Function(_PhotoLikeInitialState value)? initial,
+    TResult? Function(_PhotoLikeInProgressState value)? inProgress,
+    TResult? Function(_PhotoLikeSuccessState value)? success,
+    TResult? Function(_PhotoLikeFailureState value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,43 +72,41 @@ mixin _$PhotoLikeState {
 abstract class $PhotoLikeStateCopyWith<$Res> {
   factory $PhotoLikeStateCopyWith(
           PhotoLikeState value, $Res Function(PhotoLikeState) then) =
-      _$PhotoLikeStateCopyWithImpl<$Res>;
+      _$PhotoLikeStateCopyWithImpl<$Res, PhotoLikeState>;
 }
 
 /// @nodoc
-class _$PhotoLikeStateCopyWithImpl<$Res>
+class _$PhotoLikeStateCopyWithImpl<$Res, $Val extends PhotoLikeState>
     implements $PhotoLikeStateCopyWith<$Res> {
   _$PhotoLikeStateCopyWithImpl(this._value, this._then);
 
-  final PhotoLikeState _value;
   // ignore: unused_field
-  final $Res Function(PhotoLikeState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_PhotoLikeInitialStateCopyWith<$Res> {
-  factory _$$_PhotoLikeInitialStateCopyWith(_$_PhotoLikeInitialState value,
-          $Res Function(_$_PhotoLikeInitialState) then) =
-      __$$_PhotoLikeInitialStateCopyWithImpl<$Res>;
+abstract class _$$PhotoLikeInitialStateImplCopyWith<$Res> {
+  factory _$$PhotoLikeInitialStateImplCopyWith(
+          _$PhotoLikeInitialStateImpl value,
+          $Res Function(_$PhotoLikeInitialStateImpl) then) =
+      __$$PhotoLikeInitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PhotoLikeInitialStateCopyWithImpl<$Res>
-    extends _$PhotoLikeStateCopyWithImpl<$Res>
-    implements _$$_PhotoLikeInitialStateCopyWith<$Res> {
-  __$$_PhotoLikeInitialStateCopyWithImpl(_$_PhotoLikeInitialState _value,
-      $Res Function(_$_PhotoLikeInitialState) _then)
-      : super(_value, (v) => _then(v as _$_PhotoLikeInitialState));
-
-  @override
-  _$_PhotoLikeInitialState get _value =>
-      super._value as _$_PhotoLikeInitialState;
+class __$$PhotoLikeInitialStateImplCopyWithImpl<$Res>
+    extends _$PhotoLikeStateCopyWithImpl<$Res, _$PhotoLikeInitialStateImpl>
+    implements _$$PhotoLikeInitialStateImplCopyWith<$Res> {
+  __$$PhotoLikeInitialStateImplCopyWithImpl(_$PhotoLikeInitialStateImpl _value,
+      $Res Function(_$PhotoLikeInitialStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PhotoLikeInitialState implements _PhotoLikeInitialState {
-  const _$_PhotoLikeInitialState();
+class _$PhotoLikeInitialStateImpl implements _PhotoLikeInitialState {
+  const _$PhotoLikeInitialStateImpl();
 
   @override
   String toString() {
@@ -116,9 +114,10 @@ class _$_PhotoLikeInitialState implements _PhotoLikeInitialState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PhotoLikeInitialState);
+        (other.runtimeType == runtimeType &&
+            other is _$PhotoLikeInitialStateImpl);
   }
 
   @override
@@ -138,10 +137,10 @@ class _$_PhotoLikeInitialState implements _PhotoLikeInitialState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(bool like)? inProgress,
-    TResult Function(bool like)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(bool like)? inProgress,
+    TResult? Function(bool like)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return initial?.call();
   }
@@ -175,10 +174,10 @@ class _$_PhotoLikeInitialState implements _PhotoLikeInitialState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotoLikeInitialState value)? initial,
-    TResult Function(_PhotoLikeInProgressState value)? inProgress,
-    TResult Function(_PhotoLikeSuccessState value)? success,
-    TResult Function(_PhotoLikeFailureState value)? failure,
+    TResult? Function(_PhotoLikeInitialState value)? initial,
+    TResult? Function(_PhotoLikeInProgressState value)? inProgress,
+    TResult? Function(_PhotoLikeSuccessState value)? success,
+    TResult? Function(_PhotoLikeFailureState value)? failure,
   }) {
     return initial?.call(this);
   }
@@ -200,36 +199,35 @@ class _$_PhotoLikeInitialState implements _PhotoLikeInitialState {
 }
 
 abstract class _PhotoLikeInitialState implements PhotoLikeState {
-  const factory _PhotoLikeInitialState() = _$_PhotoLikeInitialState;
+  const factory _PhotoLikeInitialState() = _$PhotoLikeInitialStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_PhotoLikeInProgressStateCopyWith<$Res> {
-  factory _$$_PhotoLikeInProgressStateCopyWith(
-          _$_PhotoLikeInProgressState value,
-          $Res Function(_$_PhotoLikeInProgressState) then) =
-      __$$_PhotoLikeInProgressStateCopyWithImpl<$Res>;
+abstract class _$$PhotoLikeInProgressStateImplCopyWith<$Res> {
+  factory _$$PhotoLikeInProgressStateImplCopyWith(
+          _$PhotoLikeInProgressStateImpl value,
+          $Res Function(_$PhotoLikeInProgressStateImpl) then) =
+      __$$PhotoLikeInProgressStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool like});
 }
 
 /// @nodoc
-class __$$_PhotoLikeInProgressStateCopyWithImpl<$Res>
-    extends _$PhotoLikeStateCopyWithImpl<$Res>
-    implements _$$_PhotoLikeInProgressStateCopyWith<$Res> {
-  __$$_PhotoLikeInProgressStateCopyWithImpl(_$_PhotoLikeInProgressState _value,
-      $Res Function(_$_PhotoLikeInProgressState) _then)
-      : super(_value, (v) => _then(v as _$_PhotoLikeInProgressState));
+class __$$PhotoLikeInProgressStateImplCopyWithImpl<$Res>
+    extends _$PhotoLikeStateCopyWithImpl<$Res, _$PhotoLikeInProgressStateImpl>
+    implements _$$PhotoLikeInProgressStateImplCopyWith<$Res> {
+  __$$PhotoLikeInProgressStateImplCopyWithImpl(
+      _$PhotoLikeInProgressStateImpl _value,
+      $Res Function(_$PhotoLikeInProgressStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PhotoLikeInProgressState get _value =>
-      super._value as _$_PhotoLikeInProgressState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? like = freezed,
+    Object? like = null,
   }) {
-    return _then(_$_PhotoLikeInProgressState(
-      like: like == freezed
+    return _then(_$PhotoLikeInProgressStateImpl(
+      like: null == like
           ? _value.like
           : like // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -239,8 +237,8 @@ class __$$_PhotoLikeInProgressStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotoLikeInProgressState implements _PhotoLikeInProgressState {
-  const _$_PhotoLikeInProgressState({required this.like});
+class _$PhotoLikeInProgressStateImpl implements _PhotoLikeInProgressState {
+  const _$PhotoLikeInProgressStateImpl({required this.like});
 
   @override
   final bool like;
@@ -251,22 +249,22 @@ class _$_PhotoLikeInProgressState implements _PhotoLikeInProgressState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PhotoLikeInProgressState &&
-            const DeepCollectionEquality().equals(other.like, like));
+            other is _$PhotoLikeInProgressStateImpl &&
+            (identical(other.like, like) || other.like == like));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(like));
+  int get hashCode => Object.hash(runtimeType, like);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotoLikeInProgressStateCopyWith<_$_PhotoLikeInProgressState>
-      get copyWith => __$$_PhotoLikeInProgressStateCopyWithImpl<
-          _$_PhotoLikeInProgressState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoLikeInProgressStateImplCopyWith<_$PhotoLikeInProgressStateImpl>
+      get copyWith => __$$PhotoLikeInProgressStateImplCopyWithImpl<
+          _$PhotoLikeInProgressStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -282,10 +280,10 @@ class _$_PhotoLikeInProgressState implements _PhotoLikeInProgressState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(bool like)? inProgress,
-    TResult Function(bool like)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(bool like)? inProgress,
+    TResult? Function(bool like)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return inProgress?.call(like);
   }
@@ -319,10 +317,10 @@ class _$_PhotoLikeInProgressState implements _PhotoLikeInProgressState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotoLikeInitialState value)? initial,
-    TResult Function(_PhotoLikeInProgressState value)? inProgress,
-    TResult Function(_PhotoLikeSuccessState value)? success,
-    TResult Function(_PhotoLikeFailureState value)? failure,
+    TResult? Function(_PhotoLikeInitialState value)? initial,
+    TResult? Function(_PhotoLikeInProgressState value)? inProgress,
+    TResult? Function(_PhotoLikeSuccessState value)? success,
+    TResult? Function(_PhotoLikeFailureState value)? failure,
   }) {
     return inProgress?.call(this);
   }
@@ -345,40 +343,39 @@ class _$_PhotoLikeInProgressState implements _PhotoLikeInProgressState {
 
 abstract class _PhotoLikeInProgressState implements PhotoLikeState {
   const factory _PhotoLikeInProgressState({required final bool like}) =
-      _$_PhotoLikeInProgressState;
+      _$PhotoLikeInProgressStateImpl;
 
-  bool get like => throw _privateConstructorUsedError;
+  bool get like;
   @JsonKey(ignore: true)
-  _$$_PhotoLikeInProgressStateCopyWith<_$_PhotoLikeInProgressState>
+  _$$PhotoLikeInProgressStateImplCopyWith<_$PhotoLikeInProgressStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PhotoLikeSuccessStateCopyWith<$Res> {
-  factory _$$_PhotoLikeSuccessStateCopyWith(_$_PhotoLikeSuccessState value,
-          $Res Function(_$_PhotoLikeSuccessState) then) =
-      __$$_PhotoLikeSuccessStateCopyWithImpl<$Res>;
+abstract class _$$PhotoLikeSuccessStateImplCopyWith<$Res> {
+  factory _$$PhotoLikeSuccessStateImplCopyWith(
+          _$PhotoLikeSuccessStateImpl value,
+          $Res Function(_$PhotoLikeSuccessStateImpl) then) =
+      __$$PhotoLikeSuccessStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({bool like});
 }
 
 /// @nodoc
-class __$$_PhotoLikeSuccessStateCopyWithImpl<$Res>
-    extends _$PhotoLikeStateCopyWithImpl<$Res>
-    implements _$$_PhotoLikeSuccessStateCopyWith<$Res> {
-  __$$_PhotoLikeSuccessStateCopyWithImpl(_$_PhotoLikeSuccessState _value,
-      $Res Function(_$_PhotoLikeSuccessState) _then)
-      : super(_value, (v) => _then(v as _$_PhotoLikeSuccessState));
+class __$$PhotoLikeSuccessStateImplCopyWithImpl<$Res>
+    extends _$PhotoLikeStateCopyWithImpl<$Res, _$PhotoLikeSuccessStateImpl>
+    implements _$$PhotoLikeSuccessStateImplCopyWith<$Res> {
+  __$$PhotoLikeSuccessStateImplCopyWithImpl(_$PhotoLikeSuccessStateImpl _value,
+      $Res Function(_$PhotoLikeSuccessStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PhotoLikeSuccessState get _value =>
-      super._value as _$_PhotoLikeSuccessState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? like = freezed,
+    Object? like = null,
   }) {
-    return _then(_$_PhotoLikeSuccessState(
-      like: like == freezed
+    return _then(_$PhotoLikeSuccessStateImpl(
+      like: null == like
           ? _value.like
           : like // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -388,8 +385,8 @@ class __$$_PhotoLikeSuccessStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotoLikeSuccessState implements _PhotoLikeSuccessState {
-  const _$_PhotoLikeSuccessState({required this.like});
+class _$PhotoLikeSuccessStateImpl implements _PhotoLikeSuccessState {
+  const _$PhotoLikeSuccessStateImpl({required this.like});
 
   @override
   final bool like;
@@ -400,22 +397,22 @@ class _$_PhotoLikeSuccessState implements _PhotoLikeSuccessState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PhotoLikeSuccessState &&
-            const DeepCollectionEquality().equals(other.like, like));
+            other is _$PhotoLikeSuccessStateImpl &&
+            (identical(other.like, like) || other.like == like));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(like));
+  int get hashCode => Object.hash(runtimeType, like);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotoLikeSuccessStateCopyWith<_$_PhotoLikeSuccessState> get copyWith =>
-      __$$_PhotoLikeSuccessStateCopyWithImpl<_$_PhotoLikeSuccessState>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoLikeSuccessStateImplCopyWith<_$PhotoLikeSuccessStateImpl>
+      get copyWith => __$$PhotoLikeSuccessStateImplCopyWithImpl<
+          _$PhotoLikeSuccessStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -431,10 +428,10 @@ class _$_PhotoLikeSuccessState implements _PhotoLikeSuccessState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(bool like)? inProgress,
-    TResult Function(bool like)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(bool like)? inProgress,
+    TResult? Function(bool like)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return success?.call(like);
   }
@@ -468,10 +465,10 @@ class _$_PhotoLikeSuccessState implements _PhotoLikeSuccessState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotoLikeInitialState value)? initial,
-    TResult Function(_PhotoLikeInProgressState value)? inProgress,
-    TResult Function(_PhotoLikeSuccessState value)? success,
-    TResult Function(_PhotoLikeFailureState value)? failure,
+    TResult? Function(_PhotoLikeInitialState value)? initial,
+    TResult? Function(_PhotoLikeInProgressState value)? inProgress,
+    TResult? Function(_PhotoLikeSuccessState value)? success,
+    TResult? Function(_PhotoLikeFailureState value)? failure,
   }) {
     return success?.call(this);
   }
@@ -494,42 +491,41 @@ class _$_PhotoLikeSuccessState implements _PhotoLikeSuccessState {
 
 abstract class _PhotoLikeSuccessState implements PhotoLikeState {
   const factory _PhotoLikeSuccessState({required final bool like}) =
-      _$_PhotoLikeSuccessState;
+      _$PhotoLikeSuccessStateImpl;
 
-  bool get like => throw _privateConstructorUsedError;
+  bool get like;
   @JsonKey(ignore: true)
-  _$$_PhotoLikeSuccessStateCopyWith<_$_PhotoLikeSuccessState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PhotoLikeSuccessStateImplCopyWith<_$PhotoLikeSuccessStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PhotoLikeFailureStateCopyWith<$Res> {
-  factory _$$_PhotoLikeFailureStateCopyWith(_$_PhotoLikeFailureState value,
-          $Res Function(_$_PhotoLikeFailureState) then) =
-      __$$_PhotoLikeFailureStateCopyWithImpl<$Res>;
+abstract class _$$PhotoLikeFailureStateImplCopyWith<$Res> {
+  factory _$$PhotoLikeFailureStateImplCopyWith(
+          _$PhotoLikeFailureStateImpl value,
+          $Res Function(_$PhotoLikeFailureStateImpl) then) =
+      __$$PhotoLikeFailureStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Failure failure});
 
   $FailureCopyWith<$Res> get failure;
 }
 
 /// @nodoc
-class __$$_PhotoLikeFailureStateCopyWithImpl<$Res>
-    extends _$PhotoLikeStateCopyWithImpl<$Res>
-    implements _$$_PhotoLikeFailureStateCopyWith<$Res> {
-  __$$_PhotoLikeFailureStateCopyWithImpl(_$_PhotoLikeFailureState _value,
-      $Res Function(_$_PhotoLikeFailureState) _then)
-      : super(_value, (v) => _then(v as _$_PhotoLikeFailureState));
+class __$$PhotoLikeFailureStateImplCopyWithImpl<$Res>
+    extends _$PhotoLikeStateCopyWithImpl<$Res, _$PhotoLikeFailureStateImpl>
+    implements _$$PhotoLikeFailureStateImplCopyWith<$Res> {
+  __$$PhotoLikeFailureStateImplCopyWithImpl(_$PhotoLikeFailureStateImpl _value,
+      $Res Function(_$PhotoLikeFailureStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PhotoLikeFailureState get _value =>
-      super._value as _$_PhotoLikeFailureState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? failure = freezed,
+    Object? failure = null,
   }) {
-    return _then(_$_PhotoLikeFailureState(
-      failure == freezed
+    return _then(_$PhotoLikeFailureStateImpl(
+      null == failure
           ? _value.failure
           : failure // ignore: cast_nullable_to_non_nullable
               as Failure,
@@ -537,6 +533,7 @@ class __$$_PhotoLikeFailureStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $FailureCopyWith<$Res> get failure {
     return $FailureCopyWith<$Res>(_value.failure, (value) {
       return _then(_value.copyWith(failure: value));
@@ -546,8 +543,8 @@ class __$$_PhotoLikeFailureStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PhotoLikeFailureState implements _PhotoLikeFailureState {
-  const _$_PhotoLikeFailureState(this.failure);
+class _$PhotoLikeFailureStateImpl implements _PhotoLikeFailureState {
+  const _$PhotoLikeFailureStateImpl(this.failure);
 
   @override
   final Failure failure;
@@ -558,22 +555,22 @@ class _$_PhotoLikeFailureState implements _PhotoLikeFailureState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PhotoLikeFailureState &&
-            const DeepCollectionEquality().equals(other.failure, failure));
+            other is _$PhotoLikeFailureStateImpl &&
+            (identical(other.failure, failure) || other.failure == failure));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(failure));
+  int get hashCode => Object.hash(runtimeType, failure);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PhotoLikeFailureStateCopyWith<_$_PhotoLikeFailureState> get copyWith =>
-      __$$_PhotoLikeFailureStateCopyWithImpl<_$_PhotoLikeFailureState>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PhotoLikeFailureStateImplCopyWith<_$PhotoLikeFailureStateImpl>
+      get copyWith => __$$PhotoLikeFailureStateImplCopyWithImpl<
+          _$PhotoLikeFailureStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -589,10 +586,10 @@ class _$_PhotoLikeFailureState implements _PhotoLikeFailureState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function(bool like)? inProgress,
-    TResult Function(bool like)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function(bool like)? inProgress,
+    TResult? Function(bool like)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return failure?.call(this.failure);
   }
@@ -626,10 +623,10 @@ class _$_PhotoLikeFailureState implements _PhotoLikeFailureState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_PhotoLikeInitialState value)? initial,
-    TResult Function(_PhotoLikeInProgressState value)? inProgress,
-    TResult Function(_PhotoLikeSuccessState value)? success,
-    TResult Function(_PhotoLikeFailureState value)? failure,
+    TResult? Function(_PhotoLikeInitialState value)? initial,
+    TResult? Function(_PhotoLikeInProgressState value)? inProgress,
+    TResult? Function(_PhotoLikeSuccessState value)? success,
+    TResult? Function(_PhotoLikeFailureState value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -652,10 +649,10 @@ class _$_PhotoLikeFailureState implements _PhotoLikeFailureState {
 
 abstract class _PhotoLikeFailureState implements PhotoLikeState {
   const factory _PhotoLikeFailureState(final Failure failure) =
-      _$_PhotoLikeFailureState;
+      _$PhotoLikeFailureStateImpl;
 
-  Failure get failure => throw _privateConstructorUsedError;
+  Failure get failure;
   @JsonKey(ignore: true)
-  _$$_PhotoLikeFailureStateCopyWith<_$_PhotoLikeFailureState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PhotoLikeFailureStateImplCopyWith<_$PhotoLikeFailureStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

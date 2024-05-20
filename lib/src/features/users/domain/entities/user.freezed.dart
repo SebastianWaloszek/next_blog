@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'user.dart';
 
@@ -12,7 +12,7 @@ part of 'user.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$User {
@@ -32,7 +32,8 @@ mixin _$User {
 /// @nodoc
 abstract class $UserCopyWith<$Res> {
   factory $UserCopyWith(User value, $Res Function(User) then) =
-      _$UserCopyWithImpl<$Res>;
+      _$UserCopyWithImpl<$Res, User>;
+  @useResult
   $Res call(
       {UserId id,
       String name,
@@ -48,88 +49,95 @@ abstract class $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
+class _$UserCopyWithImpl<$Res, $Val extends User>
+    implements $UserCopyWith<$Res> {
   _$UserCopyWithImpl(this._value, this._then);
 
-  final User _value;
   // ignore: unused_field
-  final $Res Function(User) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? username = freezed,
-    Object? email = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? username = null,
+    Object? email = null,
     Object? address = freezed,
     Object? phone = freezed,
     Object? websiteUrl = freezed,
     Object? company = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as UserId,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      address: address == freezed
+      address: freezed == address
           ? _value.address
           : address // ignore: cast_nullable_to_non_nullable
               as Address?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      websiteUrl: websiteUrl == freezed
+      websiteUrl: freezed == websiteUrl
           ? _value.websiteUrl
           : websiteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      company: company == freezed
+      company: freezed == company
           ? _value.company
           : company // ignore: cast_nullable_to_non_nullable
               as Company?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $AddressCopyWith<$Res>? get address {
     if (_value.address == null) {
       return null;
     }
 
     return $AddressCopyWith<$Res>(_value.address!, (value) {
-      return _then(_value.copyWith(address: value));
+      return _then(_value.copyWith(address: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $CompanyCopyWith<$Res>? get company {
     if (_value.company == null) {
       return null;
     }
 
     return $CompanyCopyWith<$Res>(_value.company!, (value) {
-      return _then(_value.copyWith(company: value));
+      return _then(_value.copyWith(company: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$$_UserCopyWith(_$_User value, $Res Function(_$_User) then) =
-      __$$_UserCopyWithImpl<$Res>;
+abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
+  factory _$$UserImplCopyWith(
+          _$UserImpl value, $Res Function(_$UserImpl) then) =
+      __$$UserImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {UserId id,
       String name,
@@ -147,55 +155,54 @@ abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
-    implements _$$_UserCopyWith<$Res> {
-  __$$_UserCopyWithImpl(_$_User _value, $Res Function(_$_User) _then)
-      : super(_value, (v) => _then(v as _$_User));
+class __$$UserImplCopyWithImpl<$Res>
+    extends _$UserCopyWithImpl<$Res, _$UserImpl>
+    implements _$$UserImplCopyWith<$Res> {
+  __$$UserImplCopyWithImpl(_$UserImpl _value, $Res Function(_$UserImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_User get _value => super._value as _$_User;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? username = freezed,
-    Object? email = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? username = null,
+    Object? email = null,
     Object? address = freezed,
     Object? phone = freezed,
     Object? websiteUrl = freezed,
     Object? company = freezed,
   }) {
-    return _then(_$_User(
-      id: id == freezed
+    return _then(_$UserImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as UserId,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      username: username == freezed
+      username: null == username
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      address: address == freezed
+      address: freezed == address
           ? _value.address
           : address // ignore: cast_nullable_to_non_nullable
               as Address?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as String?,
-      websiteUrl: websiteUrl == freezed
+      websiteUrl: freezed == websiteUrl
           ? _value.websiteUrl
           : websiteUrl // ignore: cast_nullable_to_non_nullable
               as String?,
-      company: company == freezed
+      company: freezed == company
           ? _value.company
           : company // ignore: cast_nullable_to_non_nullable
               as Company?,
@@ -205,8 +212,8 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_User implements _User {
-  const _$_User(
+class _$UserImpl implements _User {
+  const _$UserImpl(
       {required this.id,
       required this.name,
       required this.username,
@@ -239,37 +246,31 @@ class _$_User implements _User {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_User &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.username, username) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.address, address) &&
-            const DeepCollectionEquality().equals(other.phone, phone) &&
-            const DeepCollectionEquality()
-                .equals(other.websiteUrl, websiteUrl) &&
-            const DeepCollectionEquality().equals(other.company, company));
+            other is _$UserImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.username, username) ||
+                other.username == username) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.address, address) || other.address == address) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.websiteUrl, websiteUrl) ||
+                other.websiteUrl == websiteUrl) &&
+            (identical(other.company, company) || other.company == company));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(username),
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(address),
-      const DeepCollectionEquality().hash(phone),
-      const DeepCollectionEquality().hash(websiteUrl),
-      const DeepCollectionEquality().hash(company));
+  int get hashCode => Object.hash(runtimeType, id, name, username, email,
+      address, phone, websiteUrl, company);
 
   @JsonKey(ignore: true)
   @override
-  _$$_UserCopyWith<_$_User> get copyWith =>
-      __$$_UserCopyWithImpl<_$_User>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UserImplCopyWith<_$UserImpl> get copyWith =>
+      __$$UserImplCopyWithImpl<_$UserImpl>(this, _$identity);
 }
 
 abstract class _User implements User {
@@ -281,27 +282,28 @@ abstract class _User implements User {
       final Address? address,
       final String? phone,
       final String? websiteUrl,
-      final Company? company}) = _$_User;
+      final Company? company}) = _$UserImpl;
 
   @override
-  UserId get id => throw _privateConstructorUsedError;
+  UserId get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String get username => throw _privateConstructorUsedError;
+  String get username;
   @override
-  String get email => throw _privateConstructorUsedError;
+  String get email;
   @override
-  Address? get address => throw _privateConstructorUsedError;
+  Address? get address;
   @override
-  String? get phone => throw _privateConstructorUsedError;
+  String? get phone;
   @override
-  String? get websiteUrl => throw _privateConstructorUsedError;
+  String? get websiteUrl;
   @override
-  Company? get company => throw _privateConstructorUsedError;
+  Company? get company;
   @override
   @JsonKey(ignore: true)
-  _$$_UserCopyWith<_$_User> get copyWith => throw _privateConstructorUsedError;
+  _$$UserImplCopyWith<_$UserImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -319,7 +321,8 @@ mixin _$Address {
 /// @nodoc
 abstract class $AddressCopyWith<$Res> {
   factory $AddressCopyWith(Address value, $Res Function(Address) then) =
-      _$AddressCopyWithImpl<$Res>;
+      _$AddressCopyWithImpl<$Res, Address>;
+  @useResult
   $Res call(
       {String street,
       String suite,
@@ -331,63 +334,68 @@ abstract class $AddressCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AddressCopyWithImpl<$Res> implements $AddressCopyWith<$Res> {
+class _$AddressCopyWithImpl<$Res, $Val extends Address>
+    implements $AddressCopyWith<$Res> {
   _$AddressCopyWithImpl(this._value, this._then);
 
-  final Address _value;
   // ignore: unused_field
-  final $Res Function(Address) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? street = freezed,
-    Object? suite = freezed,
-    Object? city = freezed,
-    Object? zipCode = freezed,
+    Object? street = null,
+    Object? suite = null,
+    Object? city = null,
+    Object? zipCode = null,
     Object? geoLocation = freezed,
   }) {
     return _then(_value.copyWith(
-      street: street == freezed
+      street: null == street
           ? _value.street
           : street // ignore: cast_nullable_to_non_nullable
               as String,
-      suite: suite == freezed
+      suite: null == suite
           ? _value.suite
           : suite // ignore: cast_nullable_to_non_nullable
               as String,
-      city: city == freezed
+      city: null == city
           ? _value.city
           : city // ignore: cast_nullable_to_non_nullable
               as String,
-      zipCode: zipCode == freezed
+      zipCode: null == zipCode
           ? _value.zipCode
           : zipCode // ignore: cast_nullable_to_non_nullable
               as String,
-      geoLocation: geoLocation == freezed
+      geoLocation: freezed == geoLocation
           ? _value.geoLocation
           : geoLocation // ignore: cast_nullable_to_non_nullable
               as GeoLocation?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $GeoLocationCopyWith<$Res>? get geoLocation {
     if (_value.geoLocation == null) {
       return null;
     }
 
     return $GeoLocationCopyWith<$Res>(_value.geoLocation!, (value) {
-      return _then(_value.copyWith(geoLocation: value));
+      return _then(_value.copyWith(geoLocation: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$$_AddressCopyWith<$Res> implements $AddressCopyWith<$Res> {
-  factory _$$_AddressCopyWith(
-          _$_Address value, $Res Function(_$_Address) then) =
-      __$$_AddressCopyWithImpl<$Res>;
+abstract class _$$AddressImplCopyWith<$Res> implements $AddressCopyWith<$Res> {
+  factory _$$AddressImplCopyWith(
+          _$AddressImpl value, $Res Function(_$AddressImpl) then) =
+      __$$AddressImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String street,
       String suite,
@@ -400,40 +408,40 @@ abstract class _$$_AddressCopyWith<$Res> implements $AddressCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_AddressCopyWithImpl<$Res> extends _$AddressCopyWithImpl<$Res>
-    implements _$$_AddressCopyWith<$Res> {
-  __$$_AddressCopyWithImpl(_$_Address _value, $Res Function(_$_Address) _then)
-      : super(_value, (v) => _then(v as _$_Address));
+class __$$AddressImplCopyWithImpl<$Res>
+    extends _$AddressCopyWithImpl<$Res, _$AddressImpl>
+    implements _$$AddressImplCopyWith<$Res> {
+  __$$AddressImplCopyWithImpl(
+      _$AddressImpl _value, $Res Function(_$AddressImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_Address get _value => super._value as _$_Address;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? street = freezed,
-    Object? suite = freezed,
-    Object? city = freezed,
-    Object? zipCode = freezed,
+    Object? street = null,
+    Object? suite = null,
+    Object? city = null,
+    Object? zipCode = null,
     Object? geoLocation = freezed,
   }) {
-    return _then(_$_Address(
-      street: street == freezed
+    return _then(_$AddressImpl(
+      street: null == street
           ? _value.street
           : street // ignore: cast_nullable_to_non_nullable
               as String,
-      suite: suite == freezed
+      suite: null == suite
           ? _value.suite
           : suite // ignore: cast_nullable_to_non_nullable
               as String,
-      city: city == freezed
+      city: null == city
           ? _value.city
           : city // ignore: cast_nullable_to_non_nullable
               as String,
-      zipCode: zipCode == freezed
+      zipCode: null == zipCode
           ? _value.zipCode
           : zipCode // ignore: cast_nullable_to_non_nullable
               as String,
-      geoLocation: geoLocation == freezed
+      geoLocation: freezed == geoLocation
           ? _value.geoLocation
           : geoLocation // ignore: cast_nullable_to_non_nullable
               as GeoLocation?,
@@ -443,8 +451,8 @@ class __$$_AddressCopyWithImpl<$Res> extends _$AddressCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Address implements _Address {
-  const _$_Address(
+class _$AddressImpl implements _Address {
+  const _$AddressImpl(
       {required this.street,
       required this.suite,
       required this.city,
@@ -468,31 +476,27 @@ class _$_Address implements _Address {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Address &&
-            const DeepCollectionEquality().equals(other.street, street) &&
-            const DeepCollectionEquality().equals(other.suite, suite) &&
-            const DeepCollectionEquality().equals(other.city, city) &&
-            const DeepCollectionEquality().equals(other.zipCode, zipCode) &&
-            const DeepCollectionEquality()
-                .equals(other.geoLocation, geoLocation));
+            other is _$AddressImpl &&
+            (identical(other.street, street) || other.street == street) &&
+            (identical(other.suite, suite) || other.suite == suite) &&
+            (identical(other.city, city) || other.city == city) &&
+            (identical(other.zipCode, zipCode) || other.zipCode == zipCode) &&
+            (identical(other.geoLocation, geoLocation) ||
+                other.geoLocation == geoLocation));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(street),
-      const DeepCollectionEquality().hash(suite),
-      const DeepCollectionEquality().hash(city),
-      const DeepCollectionEquality().hash(zipCode),
-      const DeepCollectionEquality().hash(geoLocation));
+  int get hashCode =>
+      Object.hash(runtimeType, street, suite, city, zipCode, geoLocation);
 
   @JsonKey(ignore: true)
   @override
-  _$$_AddressCopyWith<_$_Address> get copyWith =>
-      __$$_AddressCopyWithImpl<_$_Address>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AddressImplCopyWith<_$AddressImpl> get copyWith =>
+      __$$AddressImplCopyWithImpl<_$AddressImpl>(this, _$identity);
 }
 
 abstract class _Address implements Address {
@@ -501,21 +505,21 @@ abstract class _Address implements Address {
       required final String suite,
       required final String city,
       required final String zipCode,
-      final GeoLocation? geoLocation}) = _$_Address;
+      final GeoLocation? geoLocation}) = _$AddressImpl;
 
   @override
-  String get street => throw _privateConstructorUsedError;
+  String get street;
   @override
-  String get suite => throw _privateConstructorUsedError;
+  String get suite;
   @override
-  String get city => throw _privateConstructorUsedError;
+  String get city;
   @override
-  String get zipCode => throw _privateConstructorUsedError;
+  String get zipCode;
   @override
-  GeoLocation? get geoLocation => throw _privateConstructorUsedError;
+  GeoLocation? get geoLocation;
   @override
   @JsonKey(ignore: true)
-  _$$_AddressCopyWith<_$_Address> get copyWith =>
+  _$$AddressImplCopyWith<_$AddressImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -533,67 +537,71 @@ mixin _$GeoLocation {
 abstract class $GeoLocationCopyWith<$Res> {
   factory $GeoLocationCopyWith(
           GeoLocation value, $Res Function(GeoLocation) then) =
-      _$GeoLocationCopyWithImpl<$Res>;
+      _$GeoLocationCopyWithImpl<$Res, GeoLocation>;
+  @useResult
   $Res call({double latitude, double longitude});
 }
 
 /// @nodoc
-class _$GeoLocationCopyWithImpl<$Res> implements $GeoLocationCopyWith<$Res> {
+class _$GeoLocationCopyWithImpl<$Res, $Val extends GeoLocation>
+    implements $GeoLocationCopyWith<$Res> {
   _$GeoLocationCopyWithImpl(this._value, this._then);
 
-  final GeoLocation _value;
   // ignore: unused_field
-  final $Res Function(GeoLocation) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? latitude = freezed,
-    Object? longitude = freezed,
+    Object? latitude = null,
+    Object? longitude = null,
   }) {
     return _then(_value.copyWith(
-      latitude: latitude == freezed
+      latitude: null == latitude
           ? _value.latitude
           : latitude // ignore: cast_nullable_to_non_nullable
               as double,
-      longitude: longitude == freezed
+      longitude: null == longitude
           ? _value.longitude
           : longitude // ignore: cast_nullable_to_non_nullable
               as double,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_GeoLocationCopyWith<$Res>
+abstract class _$$GeoLocationImplCopyWith<$Res>
     implements $GeoLocationCopyWith<$Res> {
-  factory _$$_GeoLocationCopyWith(
-          _$_GeoLocation value, $Res Function(_$_GeoLocation) then) =
-      __$$_GeoLocationCopyWithImpl<$Res>;
+  factory _$$GeoLocationImplCopyWith(
+          _$GeoLocationImpl value, $Res Function(_$GeoLocationImpl) then) =
+      __$$GeoLocationImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({double latitude, double longitude});
 }
 
 /// @nodoc
-class __$$_GeoLocationCopyWithImpl<$Res> extends _$GeoLocationCopyWithImpl<$Res>
-    implements _$$_GeoLocationCopyWith<$Res> {
-  __$$_GeoLocationCopyWithImpl(
-      _$_GeoLocation _value, $Res Function(_$_GeoLocation) _then)
-      : super(_value, (v) => _then(v as _$_GeoLocation));
+class __$$GeoLocationImplCopyWithImpl<$Res>
+    extends _$GeoLocationCopyWithImpl<$Res, _$GeoLocationImpl>
+    implements _$$GeoLocationImplCopyWith<$Res> {
+  __$$GeoLocationImplCopyWithImpl(
+      _$GeoLocationImpl _value, $Res Function(_$GeoLocationImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_GeoLocation get _value => super._value as _$_GeoLocation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? latitude = freezed,
-    Object? longitude = freezed,
+    Object? latitude = null,
+    Object? longitude = null,
   }) {
-    return _then(_$_GeoLocation(
-      latitude: latitude == freezed
+    return _then(_$GeoLocationImpl(
+      latitude: null == latitude
           ? _value.latitude
           : latitude // ignore: cast_nullable_to_non_nullable
               as double,
-      longitude: longitude == freezed
+      longitude: null == longitude
           ? _value.longitude
           : longitude // ignore: cast_nullable_to_non_nullable
               as double,
@@ -603,8 +611,8 @@ class __$$_GeoLocationCopyWithImpl<$Res> extends _$GeoLocationCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GeoLocation implements _GeoLocation {
-  const _$_GeoLocation({required this.latitude, required this.longitude});
+class _$GeoLocationImpl implements _GeoLocation {
+  const _$GeoLocationImpl({required this.latitude, required this.longitude});
 
   @override
   final double latitude;
@@ -617,38 +625,38 @@ class _$_GeoLocation implements _GeoLocation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GeoLocation &&
-            const DeepCollectionEquality().equals(other.latitude, latitude) &&
-            const DeepCollectionEquality().equals(other.longitude, longitude));
+            other is _$GeoLocationImpl &&
+            (identical(other.latitude, latitude) ||
+                other.latitude == latitude) &&
+            (identical(other.longitude, longitude) ||
+                other.longitude == longitude));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(latitude),
-      const DeepCollectionEquality().hash(longitude));
+  int get hashCode => Object.hash(runtimeType, latitude, longitude);
 
   @JsonKey(ignore: true)
   @override
-  _$$_GeoLocationCopyWith<_$_GeoLocation> get copyWith =>
-      __$$_GeoLocationCopyWithImpl<_$_GeoLocation>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$GeoLocationImplCopyWith<_$GeoLocationImpl> get copyWith =>
+      __$$GeoLocationImplCopyWithImpl<_$GeoLocationImpl>(this, _$identity);
 }
 
 abstract class _GeoLocation implements GeoLocation {
   const factory _GeoLocation(
       {required final double latitude,
-      required final double longitude}) = _$_GeoLocation;
+      required final double longitude}) = _$GeoLocationImpl;
 
   @override
-  double get latitude => throw _privateConstructorUsedError;
+  double get latitude;
   @override
-  double get longitude => throw _privateConstructorUsedError;
+  double get longitude;
   @override
   @JsonKey(ignore: true)
-  _$$_GeoLocationCopyWith<_$_GeoLocation> get copyWith =>
+  _$$GeoLocationImplCopyWith<_$GeoLocationImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -665,75 +673,80 @@ mixin _$Company {
 /// @nodoc
 abstract class $CompanyCopyWith<$Res> {
   factory $CompanyCopyWith(Company value, $Res Function(Company) then) =
-      _$CompanyCopyWithImpl<$Res>;
+      _$CompanyCopyWithImpl<$Res, Company>;
+  @useResult
   $Res call({String name, String? catchPhrase, String? bs});
 }
 
 /// @nodoc
-class _$CompanyCopyWithImpl<$Res> implements $CompanyCopyWith<$Res> {
+class _$CompanyCopyWithImpl<$Res, $Val extends Company>
+    implements $CompanyCopyWith<$Res> {
   _$CompanyCopyWithImpl(this._value, this._then);
 
-  final Company _value;
   // ignore: unused_field
-  final $Res Function(Company) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? catchPhrase = freezed,
     Object? bs = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      catchPhrase: catchPhrase == freezed
+      catchPhrase: freezed == catchPhrase
           ? _value.catchPhrase
           : catchPhrase // ignore: cast_nullable_to_non_nullable
               as String?,
-      bs: bs == freezed
+      bs: freezed == bs
           ? _value.bs
           : bs // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_CompanyCopyWith<$Res> implements $CompanyCopyWith<$Res> {
-  factory _$$_CompanyCopyWith(
-          _$_Company value, $Res Function(_$_Company) then) =
-      __$$_CompanyCopyWithImpl<$Res>;
+abstract class _$$CompanyImplCopyWith<$Res> implements $CompanyCopyWith<$Res> {
+  factory _$$CompanyImplCopyWith(
+          _$CompanyImpl value, $Res Function(_$CompanyImpl) then) =
+      __$$CompanyImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, String? catchPhrase, String? bs});
 }
 
 /// @nodoc
-class __$$_CompanyCopyWithImpl<$Res> extends _$CompanyCopyWithImpl<$Res>
-    implements _$$_CompanyCopyWith<$Res> {
-  __$$_CompanyCopyWithImpl(_$_Company _value, $Res Function(_$_Company) _then)
-      : super(_value, (v) => _then(v as _$_Company));
+class __$$CompanyImplCopyWithImpl<$Res>
+    extends _$CompanyCopyWithImpl<$Res, _$CompanyImpl>
+    implements _$$CompanyImplCopyWith<$Res> {
+  __$$CompanyImplCopyWithImpl(
+      _$CompanyImpl _value, $Res Function(_$CompanyImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_Company get _value => super._value as _$_Company;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
+    Object? name = null,
     Object? catchPhrase = freezed,
     Object? bs = freezed,
   }) {
-    return _then(_$_Company(
-      name: name == freezed
+    return _then(_$CompanyImpl(
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      catchPhrase: catchPhrase == freezed
+      catchPhrase: freezed == catchPhrase
           ? _value.catchPhrase
           : catchPhrase // ignore: cast_nullable_to_non_nullable
               as String?,
-      bs: bs == freezed
+      bs: freezed == bs
           ? _value.bs
           : bs // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -743,8 +756,8 @@ class __$$_CompanyCopyWithImpl<$Res> extends _$CompanyCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Company implements _Company {
-  const _$_Company({required this.name, this.catchPhrase, this.bs});
+class _$CompanyImpl implements _Company {
+  const _$CompanyImpl({required this.name, this.catchPhrase, this.bs});
 
   @override
   final String name;
@@ -759,43 +772,40 @@ class _$_Company implements _Company {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Company &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.catchPhrase, catchPhrase) &&
-            const DeepCollectionEquality().equals(other.bs, bs));
+            other is _$CompanyImpl &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.catchPhrase, catchPhrase) ||
+                other.catchPhrase == catchPhrase) &&
+            (identical(other.bs, bs) || other.bs == bs));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(catchPhrase),
-      const DeepCollectionEquality().hash(bs));
+  int get hashCode => Object.hash(runtimeType, name, catchPhrase, bs);
 
   @JsonKey(ignore: true)
   @override
-  _$$_CompanyCopyWith<_$_Company> get copyWith =>
-      __$$_CompanyCopyWithImpl<_$_Company>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$CompanyImplCopyWith<_$CompanyImpl> get copyWith =>
+      __$$CompanyImplCopyWithImpl<_$CompanyImpl>(this, _$identity);
 }
 
 abstract class _Company implements Company {
   const factory _Company(
       {required final String name,
       final String? catchPhrase,
-      final String? bs}) = _$_Company;
+      final String? bs}) = _$CompanyImpl;
 
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String? get catchPhrase => throw _privateConstructorUsedError;
+  String? get catchPhrase;
   @override
-  String? get bs => throw _privateConstructorUsedError;
+  String? get bs;
   @override
   @JsonKey(ignore: true)
-  _$$_CompanyCopyWith<_$_Company> get copyWith =>
+  _$$CompanyImplCopyWith<_$CompanyImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

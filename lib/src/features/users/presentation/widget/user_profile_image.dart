@@ -7,9 +7,9 @@ import 'package:next_photo/src/common/presentation/theme/app_colors.dart';
 class UserProfileImage extends StatelessWidget {
   /// Creates a user profile image.
   const UserProfileImage({
-    Key? key,
+    super.key,
     this.radius,
-  }) : super(key: key);
+  });
 
   /// The radius of the round image.
   ///

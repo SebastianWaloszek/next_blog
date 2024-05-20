@@ -9,9 +9,9 @@ import 'package:next_photo/src/features/users/presentation/widget/user_profile_i
 class UserStoriesListItem extends StatefulWidget {
   /// Creates item.
   const UserStoriesListItem({
-    Key? key,
+    super.key,
     required this.user,
-  }) : super(key: key);
+  });
 
   /// The user of which the story is shown.
   final User user;

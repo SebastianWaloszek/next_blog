@@ -2,7 +2,6 @@
 
 library common;
 
-export 'data/http/adapter/shared.dart';
 export 'data/http/app_http_client.dart';
 export 'presentation/cubits/bottom_navigation_cubit.dart';
 export 'presentation/enums/bottom_navigation_tab.dart';

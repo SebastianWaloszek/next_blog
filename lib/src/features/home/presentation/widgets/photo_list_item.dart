@@ -19,9 +19,9 @@ import 'package:timeago/timeago.dart' as timeago;
 class PhotoListItem extends StatefulWidget {
   /// Creates item.
   const PhotoListItem({
-    Key? key,
+    super.key,
     required this.photo,
-  }) : super(key: key);
+  });
 
   /// The photo that should be shown.
   final Photo photo;
@@ -71,9 +71,8 @@ class _PhotoListItemState extends State<PhotoListItem>
 
 class _Photo extends StatelessWidget {
   const _Photo({
-    Key? key,
     required this.photo,
-  }) : super(key: key);
+  });
 
   final Photo photo;
 
@@ -101,7 +100,7 @@ class _Photo extends StatelessWidget {
 }
 
 class _Header extends StatelessWidget {
-  const _Header({Key? key}) : super(key: key);
+  const _Header();
 
   @override
   Widget build(BuildContext context) {
@@ -142,9 +141,8 @@ class _Header extends StatelessWidget {
 
 class _Footer extends StatelessWidget {
   const _Footer({
-    Key? key,
     required this.photo,
-  }) : super(key: key);
+  });
 
   final Photo photo;
 
@@ -208,14 +206,14 @@ class _Footer extends StatelessWidget {
             context,
             color: AppColors.secondaryContent(context),
           ),
-        )
+        ),
       ],
     );
   }
 }
 
 class _ViewAllCommentsButton extends StatelessWidget {
-  const _ViewAllCommentsButton({Key? key}) : super(key: key);
+  const _ViewAllCommentsButton();
 
   @override
   Widget build(BuildContext context) {
@@ -235,7 +233,7 @@ class _ViewAllCommentsButton extends StatelessWidget {
 }
 
 class _AddACommentButton extends StatelessWidget {
-  const _AddACommentButton({Key? key}) : super(key: key);
+  const _AddACommentButton();
 
   @override
   Widget build(BuildContext context) {
@@ -263,9 +261,8 @@ class _AddACommentButton extends StatelessWidget {
 
 class _LikeButton extends StatelessWidget {
   const _LikeButton({
-    Key? key,
     required this.photo,
-  }) : super(key: key);
+  });
 
   final Photo photo;
 

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'album.dart';
 
@@ -12,7 +12,7 @@ part of 'album.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$Album {
@@ -27,74 +27,80 @@ mixin _$Album {
 /// @nodoc
 abstract class $AlbumCopyWith<$Res> {
   factory $AlbumCopyWith(Album value, $Res Function(Album) then) =
-      _$AlbumCopyWithImpl<$Res>;
+      _$AlbumCopyWithImpl<$Res, Album>;
+  @useResult
   $Res call({AlbumId id, UserId userId, String title});
 }
 
 /// @nodoc
-class _$AlbumCopyWithImpl<$Res> implements $AlbumCopyWith<$Res> {
+class _$AlbumCopyWithImpl<$Res, $Val extends Album>
+    implements $AlbumCopyWith<$Res> {
   _$AlbumCopyWithImpl(this._value, this._then);
 
-  final Album _value;
   // ignore: unused_field
-  final $Res Function(Album) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? userId = null,
+    Object? title = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as AlbumId,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as UserId,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_AlbumCopyWith<$Res> implements $AlbumCopyWith<$Res> {
-  factory _$$_AlbumCopyWith(_$_Album value, $Res Function(_$_Album) then) =
-      __$$_AlbumCopyWithImpl<$Res>;
+abstract class _$$AlbumImplCopyWith<$Res> implements $AlbumCopyWith<$Res> {
+  factory _$$AlbumImplCopyWith(
+          _$AlbumImpl value, $Res Function(_$AlbumImpl) then) =
+      __$$AlbumImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({AlbumId id, UserId userId, String title});
 }
 
 /// @nodoc
-class __$$_AlbumCopyWithImpl<$Res> extends _$AlbumCopyWithImpl<$Res>
-    implements _$$_AlbumCopyWith<$Res> {
-  __$$_AlbumCopyWithImpl(_$_Album _value, $Res Function(_$_Album) _then)
-      : super(_value, (v) => _then(v as _$_Album));
+class __$$AlbumImplCopyWithImpl<$Res>
+    extends _$AlbumCopyWithImpl<$Res, _$AlbumImpl>
+    implements _$$AlbumImplCopyWith<$Res> {
+  __$$AlbumImplCopyWithImpl(
+      _$AlbumImpl _value, $Res Function(_$AlbumImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_Album get _value => super._value as _$_Album;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? userId = null,
+    Object? title = null,
   }) {
-    return _then(_$_Album(
-      id: id == freezed
+    return _then(_$AlbumImpl(
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as AlbumId,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as UserId,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
@@ -104,8 +110,9 @@ class __$$_AlbumCopyWithImpl<$Res> extends _$AlbumCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Album implements _Album {
-  const _$_Album({required this.id, required this.userId, required this.title});
+class _$AlbumImpl implements _Album {
+  const _$AlbumImpl(
+      {required this.id, required this.userId, required this.title});
 
   @override
   final AlbumId id;
@@ -120,42 +127,39 @@ class _$_Album implements _Album {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Album &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.title, title));
+            other is _$AlbumImpl &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.title, title) || other.title == title));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(title));
+  int get hashCode => Object.hash(runtimeType, id, userId, title);
 
   @JsonKey(ignore: true)
   @override
-  _$$_AlbumCopyWith<_$_Album> get copyWith =>
-      __$$_AlbumCopyWithImpl<_$_Album>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AlbumImplCopyWith<_$AlbumImpl> get copyWith =>
+      __$$AlbumImplCopyWithImpl<_$AlbumImpl>(this, _$identity);
 }
 
 abstract class _Album implements Album {
   const factory _Album(
       {required final AlbumId id,
       required final UserId userId,
-      required final String title}) = _$_Album;
+      required final String title}) = _$AlbumImpl;
 
   @override
-  AlbumId get id => throw _privateConstructorUsedError;
+  AlbumId get id;
   @override
-  UserId get userId => throw _privateConstructorUsedError;
+  UserId get userId;
   @override
-  String get title => throw _privateConstructorUsedError;
+  String get title;
   @override
   @JsonKey(ignore: true)
-  _$$_AlbumCopyWith<_$_Album> get copyWith =>
+  _$$AlbumImplCopyWith<_$AlbumImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -42,7 +42,7 @@ void main() {
           return cubit;
         },
         act: (cubit) => cubit.getAllUsers(),
-        verify: (_) => verify(getAllUsers).called(1),
+        verify: (_) => verify(getAllUsers.call).called(1),
         expect: () => [
           const UsersState.inProgress(),
           UsersState.success(users),
@@ -56,7 +56,7 @@ void main() {
           return cubit;
         },
         act: (cubit) => cubit.getAllUsers(),
-        verify: (_) => verify(getAllUsers).called(1),
+        verify: (_) => verify(getAllUsers.call).called(1),
         expect: () => [
           const UsersState.inProgress(),
           const UsersState.failure(failure),

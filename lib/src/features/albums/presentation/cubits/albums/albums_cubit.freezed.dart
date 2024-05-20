@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'albums_cubit.dart';
 
@@ -12,7 +12,7 @@ part of 'albums_cubit.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AlbumsState {
@@ -26,10 +26,10 @@ mixin _$AlbumsState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? inProgress,
-    TResult Function(List<Album> albums)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function()? inProgress,
+    TResult? Function(List<Album> albums)? success,
+    TResult? Function(Failure failure)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$AlbumsState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AlbumsInitialState value)? initial,
-    TResult Function(_AlbumsInProgressState value)? inProgress,
-    TResult Function(_AlbumsSuccessState value)? success,
-    TResult Function(_AlbumsFailureState value)? failure,
+    TResult? Function(_AlbumsInitialState value)? initial,
+    TResult? Function(_AlbumsInProgressState value)? inProgress,
+    TResult? Function(_AlbumsSuccessState value)? success,
+    TResult? Function(_AlbumsFailureState value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,41 +72,40 @@ mixin _$AlbumsState {
 abstract class $AlbumsStateCopyWith<$Res> {
   factory $AlbumsStateCopyWith(
           AlbumsState value, $Res Function(AlbumsState) then) =
-      _$AlbumsStateCopyWithImpl<$Res>;
+      _$AlbumsStateCopyWithImpl<$Res, AlbumsState>;
 }
 
 /// @nodoc
-class _$AlbumsStateCopyWithImpl<$Res> implements $AlbumsStateCopyWith<$Res> {
+class _$AlbumsStateCopyWithImpl<$Res, $Val extends AlbumsState>
+    implements $AlbumsStateCopyWith<$Res> {
   _$AlbumsStateCopyWithImpl(this._value, this._then);
 
-  final AlbumsState _value;
   // ignore: unused_field
-  final $Res Function(AlbumsState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_AlbumsInitialStateCopyWith<$Res> {
-  factory _$$_AlbumsInitialStateCopyWith(_$_AlbumsInitialState value,
-          $Res Function(_$_AlbumsInitialState) then) =
-      __$$_AlbumsInitialStateCopyWithImpl<$Res>;
+abstract class _$$AlbumsInitialStateImplCopyWith<$Res> {
+  factory _$$AlbumsInitialStateImplCopyWith(_$AlbumsInitialStateImpl value,
+          $Res Function(_$AlbumsInitialStateImpl) then) =
+      __$$AlbumsInitialStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_AlbumsInitialStateCopyWithImpl<$Res>
-    extends _$AlbumsStateCopyWithImpl<$Res>
-    implements _$$_AlbumsInitialStateCopyWith<$Res> {
-  __$$_AlbumsInitialStateCopyWithImpl(
-      _$_AlbumsInitialState _value, $Res Function(_$_AlbumsInitialState) _then)
-      : super(_value, (v) => _then(v as _$_AlbumsInitialState));
-
-  @override
-  _$_AlbumsInitialState get _value => super._value as _$_AlbumsInitialState;
+class __$$AlbumsInitialStateImplCopyWithImpl<$Res>
+    extends _$AlbumsStateCopyWithImpl<$Res, _$AlbumsInitialStateImpl>
+    implements _$$AlbumsInitialStateImplCopyWith<$Res> {
+  __$$AlbumsInitialStateImplCopyWithImpl(_$AlbumsInitialStateImpl _value,
+      $Res Function(_$AlbumsInitialStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AlbumsInitialState implements _AlbumsInitialState {
-  const _$_AlbumsInitialState();
+class _$AlbumsInitialStateImpl implements _AlbumsInitialState {
+  const _$AlbumsInitialStateImpl();
 
   @override
   String toString() {
@@ -114,9 +113,9 @@ class _$_AlbumsInitialState implements _AlbumsInitialState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_AlbumsInitialState);
+        (other.runtimeType == runtimeType && other is _$AlbumsInitialStateImpl);
   }
 
   @override
@@ -136,10 +135,10 @@ class _$_AlbumsInitialState implements _AlbumsInitialState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? inProgress,
-    TResult Function(List<Album> albums)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function()? inProgress,
+    TResult? Function(List<Album> albums)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return initial?.call();
   }
@@ -173,10 +172,10 @@ class _$_AlbumsInitialState implements _AlbumsInitialState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AlbumsInitialState value)? initial,
-    TResult Function(_AlbumsInProgressState value)? inProgress,
-    TResult Function(_AlbumsSuccessState value)? success,
-    TResult Function(_AlbumsFailureState value)? failure,
+    TResult? Function(_AlbumsInitialState value)? initial,
+    TResult? Function(_AlbumsInProgressState value)? inProgress,
+    TResult? Function(_AlbumsSuccessState value)? success,
+    TResult? Function(_AlbumsFailureState value)? failure,
   }) {
     return initial?.call(this);
   }
@@ -198,33 +197,30 @@ class _$_AlbumsInitialState implements _AlbumsInitialState {
 }
 
 abstract class _AlbumsInitialState implements AlbumsState {
-  const factory _AlbumsInitialState() = _$_AlbumsInitialState;
+  const factory _AlbumsInitialState() = _$AlbumsInitialStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_AlbumsInProgressStateCopyWith<$Res> {
-  factory _$$_AlbumsInProgressStateCopyWith(_$_AlbumsInProgressState value,
-          $Res Function(_$_AlbumsInProgressState) then) =
-      __$$_AlbumsInProgressStateCopyWithImpl<$Res>;
+abstract class _$$AlbumsInProgressStateImplCopyWith<$Res> {
+  factory _$$AlbumsInProgressStateImplCopyWith(
+          _$AlbumsInProgressStateImpl value,
+          $Res Function(_$AlbumsInProgressStateImpl) then) =
+      __$$AlbumsInProgressStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_AlbumsInProgressStateCopyWithImpl<$Res>
-    extends _$AlbumsStateCopyWithImpl<$Res>
-    implements _$$_AlbumsInProgressStateCopyWith<$Res> {
-  __$$_AlbumsInProgressStateCopyWithImpl(_$_AlbumsInProgressState _value,
-      $Res Function(_$_AlbumsInProgressState) _then)
-      : super(_value, (v) => _then(v as _$_AlbumsInProgressState));
-
-  @override
-  _$_AlbumsInProgressState get _value =>
-      super._value as _$_AlbumsInProgressState;
+class __$$AlbumsInProgressStateImplCopyWithImpl<$Res>
+    extends _$AlbumsStateCopyWithImpl<$Res, _$AlbumsInProgressStateImpl>
+    implements _$$AlbumsInProgressStateImplCopyWith<$Res> {
+  __$$AlbumsInProgressStateImplCopyWithImpl(_$AlbumsInProgressStateImpl _value,
+      $Res Function(_$AlbumsInProgressStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AlbumsInProgressState implements _AlbumsInProgressState {
-  const _$_AlbumsInProgressState();
+class _$AlbumsInProgressStateImpl implements _AlbumsInProgressState {
+  const _$AlbumsInProgressStateImpl();
 
   @override
   String toString() {
@@ -232,9 +228,10 @@ class _$_AlbumsInProgressState implements _AlbumsInProgressState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_AlbumsInProgressState);
+        (other.runtimeType == runtimeType &&
+            other is _$AlbumsInProgressStateImpl);
   }
 
   @override
@@ -254,10 +251,10 @@ class _$_AlbumsInProgressState implements _AlbumsInProgressState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? inProgress,
-    TResult Function(List<Album> albums)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function()? inProgress,
+    TResult? Function(List<Album> albums)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return inProgress?.call();
   }
@@ -291,10 +288,10 @@ class _$_AlbumsInProgressState implements _AlbumsInProgressState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AlbumsInitialState value)? initial,
-    TResult Function(_AlbumsInProgressState value)? inProgress,
-    TResult Function(_AlbumsSuccessState value)? success,
-    TResult Function(_AlbumsFailureState value)? failure,
+    TResult? Function(_AlbumsInitialState value)? initial,
+    TResult? Function(_AlbumsInProgressState value)? inProgress,
+    TResult? Function(_AlbumsSuccessState value)? success,
+    TResult? Function(_AlbumsFailureState value)? failure,
   }) {
     return inProgress?.call(this);
   }
@@ -316,34 +313,33 @@ class _$_AlbumsInProgressState implements _AlbumsInProgressState {
 }
 
 abstract class _AlbumsInProgressState implements AlbumsState {
-  const factory _AlbumsInProgressState() = _$_AlbumsInProgressState;
+  const factory _AlbumsInProgressState() = _$AlbumsInProgressStateImpl;
 }
 
 /// @nodoc
-abstract class _$$_AlbumsSuccessStateCopyWith<$Res> {
-  factory _$$_AlbumsSuccessStateCopyWith(_$_AlbumsSuccessState value,
-          $Res Function(_$_AlbumsSuccessState) then) =
-      __$$_AlbumsSuccessStateCopyWithImpl<$Res>;
+abstract class _$$AlbumsSuccessStateImplCopyWith<$Res> {
+  factory _$$AlbumsSuccessStateImplCopyWith(_$AlbumsSuccessStateImpl value,
+          $Res Function(_$AlbumsSuccessStateImpl) then) =
+      __$$AlbumsSuccessStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Album> albums});
 }
 
 /// @nodoc
-class __$$_AlbumsSuccessStateCopyWithImpl<$Res>
-    extends _$AlbumsStateCopyWithImpl<$Res>
-    implements _$$_AlbumsSuccessStateCopyWith<$Res> {
-  __$$_AlbumsSuccessStateCopyWithImpl(
-      _$_AlbumsSuccessState _value, $Res Function(_$_AlbumsSuccessState) _then)
-      : super(_value, (v) => _then(v as _$_AlbumsSuccessState));
+class __$$AlbumsSuccessStateImplCopyWithImpl<$Res>
+    extends _$AlbumsStateCopyWithImpl<$Res, _$AlbumsSuccessStateImpl>
+    implements _$$AlbumsSuccessStateImplCopyWith<$Res> {
+  __$$AlbumsSuccessStateImplCopyWithImpl(_$AlbumsSuccessStateImpl _value,
+      $Res Function(_$AlbumsSuccessStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_AlbumsSuccessState get _value => super._value as _$_AlbumsSuccessState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? albums = freezed,
+    Object? albums = null,
   }) {
-    return _then(_$_AlbumsSuccessState(
-      albums == freezed
+    return _then(_$AlbumsSuccessStateImpl(
+      null == albums
           ? _value._albums
           : albums // ignore: cast_nullable_to_non_nullable
               as List<Album>,
@@ -353,12 +349,13 @@ class __$$_AlbumsSuccessStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AlbumsSuccessState implements _AlbumsSuccessState {
-  const _$_AlbumsSuccessState(final List<Album> albums) : _albums = albums;
+class _$AlbumsSuccessStateImpl implements _AlbumsSuccessState {
+  const _$AlbumsSuccessStateImpl(final List<Album> albums) : _albums = albums;
 
   final List<Album> _albums;
   @override
   List<Album> get albums {
+    if (_albums is EqualUnmodifiableListView) return _albums;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_albums);
   }
@@ -369,10 +366,10 @@ class _$_AlbumsSuccessState implements _AlbumsSuccessState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AlbumsSuccessState &&
+            other is _$AlbumsSuccessStateImpl &&
             const DeepCollectionEquality().equals(other._albums, _albums));
   }
 
@@ -382,8 +379,9 @@ class _$_AlbumsSuccessState implements _AlbumsSuccessState {
 
   @JsonKey(ignore: true)
   @override
-  _$$_AlbumsSuccessStateCopyWith<_$_AlbumsSuccessState> get copyWith =>
-      __$$_AlbumsSuccessStateCopyWithImpl<_$_AlbumsSuccessState>(
+  @pragma('vm:prefer-inline')
+  _$$AlbumsSuccessStateImplCopyWith<_$AlbumsSuccessStateImpl> get copyWith =>
+      __$$AlbumsSuccessStateImplCopyWithImpl<_$AlbumsSuccessStateImpl>(
           this, _$identity);
 
   @override
@@ -400,10 +398,10 @@ class _$_AlbumsSuccessState implements _AlbumsSuccessState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? inProgress,
-    TResult Function(List<Album> albums)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function()? inProgress,
+    TResult? Function(List<Album> albums)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return success?.call(albums);
   }
@@ -437,10 +435,10 @@ class _$_AlbumsSuccessState implements _AlbumsSuccessState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AlbumsInitialState value)? initial,
-    TResult Function(_AlbumsInProgressState value)? inProgress,
-    TResult Function(_AlbumsSuccessState value)? success,
-    TResult Function(_AlbumsFailureState value)? failure,
+    TResult? Function(_AlbumsInitialState value)? initial,
+    TResult? Function(_AlbumsInProgressState value)? inProgress,
+    TResult? Function(_AlbumsSuccessState value)? success,
+    TResult? Function(_AlbumsFailureState value)? failure,
   }) {
     return success?.call(this);
   }
@@ -463,41 +461,40 @@ class _$_AlbumsSuccessState implements _AlbumsSuccessState {
 
 abstract class _AlbumsSuccessState implements AlbumsState {
   const factory _AlbumsSuccessState(final List<Album> albums) =
-      _$_AlbumsSuccessState;
+      _$AlbumsSuccessStateImpl;
 
-  List<Album> get albums => throw _privateConstructorUsedError;
+  List<Album> get albums;
   @JsonKey(ignore: true)
-  _$$_AlbumsSuccessStateCopyWith<_$_AlbumsSuccessState> get copyWith =>
+  _$$AlbumsSuccessStateImplCopyWith<_$AlbumsSuccessStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_AlbumsFailureStateCopyWith<$Res> {
-  factory _$$_AlbumsFailureStateCopyWith(_$_AlbumsFailureState value,
-          $Res Function(_$_AlbumsFailureState) then) =
-      __$$_AlbumsFailureStateCopyWithImpl<$Res>;
+abstract class _$$AlbumsFailureStateImplCopyWith<$Res> {
+  factory _$$AlbumsFailureStateImplCopyWith(_$AlbumsFailureStateImpl value,
+          $Res Function(_$AlbumsFailureStateImpl) then) =
+      __$$AlbumsFailureStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({Failure failure});
 
   $FailureCopyWith<$Res> get failure;
 }
 
 /// @nodoc
-class __$$_AlbumsFailureStateCopyWithImpl<$Res>
-    extends _$AlbumsStateCopyWithImpl<$Res>
-    implements _$$_AlbumsFailureStateCopyWith<$Res> {
-  __$$_AlbumsFailureStateCopyWithImpl(
-      _$_AlbumsFailureState _value, $Res Function(_$_AlbumsFailureState) _then)
-      : super(_value, (v) => _then(v as _$_AlbumsFailureState));
+class __$$AlbumsFailureStateImplCopyWithImpl<$Res>
+    extends _$AlbumsStateCopyWithImpl<$Res, _$AlbumsFailureStateImpl>
+    implements _$$AlbumsFailureStateImplCopyWith<$Res> {
+  __$$AlbumsFailureStateImplCopyWithImpl(_$AlbumsFailureStateImpl _value,
+      $Res Function(_$AlbumsFailureStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_AlbumsFailureState get _value => super._value as _$_AlbumsFailureState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? failure = freezed,
+    Object? failure = null,
   }) {
-    return _then(_$_AlbumsFailureState(
-      failure == freezed
+    return _then(_$AlbumsFailureStateImpl(
+      null == failure
           ? _value.failure
           : failure // ignore: cast_nullable_to_non_nullable
               as Failure,
@@ -505,6 +502,7 @@ class __$$_AlbumsFailureStateCopyWithImpl<$Res>
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $FailureCopyWith<$Res> get failure {
     return $FailureCopyWith<$Res>(_value.failure, (value) {
       return _then(_value.copyWith(failure: value));
@@ -514,8 +512,8 @@ class __$$_AlbumsFailureStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AlbumsFailureState implements _AlbumsFailureState {
-  const _$_AlbumsFailureState(this.failure);
+class _$AlbumsFailureStateImpl implements _AlbumsFailureState {
+  const _$AlbumsFailureStateImpl(this.failure);
 
   @override
   final Failure failure;
@@ -526,21 +524,21 @@ class _$_AlbumsFailureState implements _AlbumsFailureState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AlbumsFailureState &&
-            const DeepCollectionEquality().equals(other.failure, failure));
+            other is _$AlbumsFailureStateImpl &&
+            (identical(other.failure, failure) || other.failure == failure));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(failure));
+  int get hashCode => Object.hash(runtimeType, failure);
 
   @JsonKey(ignore: true)
   @override
-  _$$_AlbumsFailureStateCopyWith<_$_AlbumsFailureState> get copyWith =>
-      __$$_AlbumsFailureStateCopyWithImpl<_$_AlbumsFailureState>(
+  @pragma('vm:prefer-inline')
+  _$$AlbumsFailureStateImplCopyWith<_$AlbumsFailureStateImpl> get copyWith =>
+      __$$AlbumsFailureStateImplCopyWithImpl<_$AlbumsFailureStateImpl>(
           this, _$identity);
 
   @override
@@ -557,10 +555,10 @@ class _$_AlbumsFailureState implements _AlbumsFailureState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? inProgress,
-    TResult Function(List<Album> albums)? success,
-    TResult Function(Failure failure)? failure,
+    TResult? Function()? initial,
+    TResult? Function()? inProgress,
+    TResult? Function(List<Album> albums)? success,
+    TResult? Function(Failure failure)? failure,
   }) {
     return failure?.call(this.failure);
   }
@@ -594,10 +592,10 @@ class _$_AlbumsFailureState implements _AlbumsFailureState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AlbumsInitialState value)? initial,
-    TResult Function(_AlbumsInProgressState value)? inProgress,
-    TResult Function(_AlbumsSuccessState value)? success,
-    TResult Function(_AlbumsFailureState value)? failure,
+    TResult? Function(_AlbumsInitialState value)? initial,
+    TResult? Function(_AlbumsInProgressState value)? inProgress,
+    TResult? Function(_AlbumsSuccessState value)? success,
+    TResult? Function(_AlbumsFailureState value)? failure,
   }) {
     return failure?.call(this);
   }
@@ -620,10 +618,10 @@ class _$_AlbumsFailureState implements _AlbumsFailureState {
 
 abstract class _AlbumsFailureState implements AlbumsState {
   const factory _AlbumsFailureState(final Failure failure) =
-      _$_AlbumsFailureState;
+      _$AlbumsFailureStateImpl;
 
-  Failure get failure => throw _privateConstructorUsedError;
+  Failure get failure;
   @JsonKey(ignore: true)
-  _$$_AlbumsFailureStateCopyWith<_$_AlbumsFailureState> get copyWith =>
+  _$$AlbumsFailureStateImplCopyWith<_$AlbumsFailureStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

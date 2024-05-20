@@ -58,7 +58,7 @@ void main() {
           return cubit;
         },
         act: (cubit) => cubit.getAllAlbums(),
-        verify: (_) => verify(getAllAlbums).called(1),
+        verify: (_) => verify(getAllAlbums.call).called(1),
         expect: () => [
           const AlbumsState.inProgress(),
           AlbumsState.success(albums),
@@ -72,7 +72,7 @@ void main() {
           return cubit;
         },
         act: (cubit) => cubit.getAllAlbums(),
-        verify: (_) => verify(getAllAlbums).called(1),
+        verify: (_) => verify(getAllAlbums.call).called(1),
         expect: () => [
           const AlbumsState.inProgress(),
           const AlbumsState.failure(failure),

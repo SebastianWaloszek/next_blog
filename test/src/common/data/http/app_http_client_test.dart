@@ -1,4 +1,3 @@
-import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:next_photo/src/common/data/http/app_http_client.dart';
@@ -11,7 +10,7 @@ void main() {
         'should be configured correctly',
         () {
           final baseOptions = BaseOptions();
-          final interceptors = [Interceptor()];
+          final interceptors = [const Interceptor()];
 
           final client = AppHttpClient(
             options: baseOptions,
@@ -20,7 +19,7 @@ void main() {
 
           expect(client.options, baseOptions);
           expect(client.interceptors, interceptors);
-          expect(client.httpClientAdapter, isA<DefaultHttpClientAdapter>());
+          expect(client.httpClientAdapter, isA<HttpClientAdapter>());
         },
       );
     },

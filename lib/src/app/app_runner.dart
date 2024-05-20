@@ -10,10 +10,7 @@ Future<void> runApplication() async {
 
   await setupDependencies();
 
-  BlocOverrides.runZoned(
-    () {
-      runApp(App());
-    },
-    blocObserver: AppBlocObserver(logger: getIt()),
-  );
+  Bloc.observer = AppBlocObserver(logger: getIt());
+
+  runApp(App());
 }

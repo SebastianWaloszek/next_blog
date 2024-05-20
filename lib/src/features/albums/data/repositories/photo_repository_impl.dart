@@ -36,7 +36,11 @@ class PhotoRepositoryImpl implements PhotoRepository {
 
       return Result(photos);
     } catch (e, s) {
-      _logger.e('Getting photos for album ${albumId.value} has failed!', e, s);
+      _logger.e(
+        'Getting photos for album ${albumId.value} has failed!',
+        error: e,
+        stackTrace: s,
+      );
 
       return Result.failure(Failure(e, s));
     }
@@ -50,7 +54,7 @@ class PhotoRepositoryImpl implements PhotoRepository {
 
       return Result(photos);
     } catch (e, s) {
-      _logger.e('Getting all photos has failed!', e, s);
+      _logger.e('Getting all photos has failed!', error: e, stackTrace: s);
 
       return Result.failure(Failure(e, s));
     }
@@ -64,7 +68,11 @@ class PhotoRepositoryImpl implements PhotoRepository {
 
       return Result(photo);
     } catch (e, s) {
-      _logger.e('Getting photo ${photoId.value} has failed!', e, s);
+      _logger.e(
+        'Getting photo ${photoId.value} has failed!',
+        error: e,
+        stackTrace: s,
+      );
 
       return Result.failure(Failure(e, s));
     }
@@ -85,8 +93,8 @@ class PhotoRepositoryImpl implements PhotoRepository {
     } catch (e, s) {
       _logger.e(
         'Updating photo like for photo ${id.value} with $like has failed!',
-        e,
-        s,
+        error: e,
+        stackTrace: s,
       );
 
       return Result.failure(Failure(e, s));

@@ -21,5 +21,5 @@ class Photo with _$Photo {
 /// The id of an album photo.
 class PhotoId extends Id<int> {
   /// Creates an album photo id for a specific [value].
-  const PhotoId(int value) : super(value);
+  const PhotoId(super.value);
 }

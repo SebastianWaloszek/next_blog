@@ -57,7 +57,7 @@ void main() {
           return cubit;
         },
         act: (cubit) => cubit.getAllPhotos(),
-        verify: (_) => verify(getAllPhotos).called(1),
+        verify: (_) => verify(getAllPhotos.call).called(1),
         expect: () => [
           const PhotosState.inProgress(),
           PhotosState.success(photos),
@@ -75,7 +75,7 @@ void main() {
           await cubit.getAllPhotos();
           return cubit.getAllPhotos();
         },
-        verify: (_) => verify(getAllPhotos).called(2),
+        verify: (_) => verify(getAllPhotos.call).called(2),
         expect: () => [
           const PhotosState.inProgress(),
           PhotosState.success(photos),
@@ -91,7 +91,7 @@ void main() {
           return cubit;
         },
         act: (cubit) => cubit.getAllPhotos(),
-        verify: (_) => verify(getAllPhotos).called(1),
+        verify: (_) => verify(getAllPhotos.call).called(1),
         expect: () => [
           const PhotosState.inProgress(),
           const PhotosState.failure(failure),

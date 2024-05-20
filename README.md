@@ -76,10 +76,10 @@ Each module follows strict layer segregation. Three main layers are defined:
 
 This app was developed and tested on the following flutter channel and version:
 ```javascript
-Flutter 3.0.0 • channel stable • https://github.com/flutter/flutter.git
-Framework • revision ee4e09cce0 (7 days ago) • 2022-05-09 16:45:18 -0700
-Engine • revision d1b9a6938a
-Tools • Dart 2.17.0 • DevTools 2.12.2
+Flutter 3.22.0 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 5dcb86f68f (11 days ago) • 2024-05-09 07:39:20 -0500
+Engine • revision f6344b75dc
+Tools • Dart 3.4.0 • DevTools 2.34.3
 ```
 
 ## Running the app

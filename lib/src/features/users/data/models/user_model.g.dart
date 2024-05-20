@@ -6,8 +6,9 @@ part of 'user_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UserModel _$$_UserModelFromJson(Map<String, dynamic> json) => _$_UserModel(
-      id: json['id'] as int,
+_$UserModelImpl _$$UserModelImplFromJson(Map<String, dynamic> json) =>
+    _$UserModelImpl(
+      id: (json['id'] as num).toInt(),
       name: json['name'] as String,
       username: json['username'] as String,
       email: json['email'] as String,
@@ -21,7 +22,7 @@ _$_UserModel _$$_UserModelFromJson(Map<String, dynamic> json) => _$_UserModel(
           : CompanyModel.fromJson(json['company'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_UserModelToJson(_$_UserModel instance) =>
+Map<String, dynamic> _$$UserModelImplToJson(_$UserModelImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
@@ -33,8 +34,8 @@ Map<String, dynamic> _$$_UserModelToJson(_$_UserModel instance) =>
       'company': instance.company,
     };
 
-_$_AddressModel _$$_AddressModelFromJson(Map<String, dynamic> json) =>
-    _$_AddressModel(
+_$AddressModelImpl _$$AddressModelImplFromJson(Map<String, dynamic> json) =>
+    _$AddressModelImpl(
       street: json['street'] as String,
       suite: json['suite'] as String,
       city: json['city'] as String,
@@ -44,7 +45,7 @@ _$_AddressModel _$$_AddressModelFromJson(Map<String, dynamic> json) =>
           : GeoLocationModel.fromJson(json['geo'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_AddressModelToJson(_$_AddressModel instance) =>
+Map<String, dynamic> _$$AddressModelImplToJson(_$AddressModelImpl instance) =>
     <String, dynamic>{
       'street': instance.street,
       'suite': instance.suite,
@@ -53,26 +54,28 @@ Map<String, dynamic> _$$_AddressModelToJson(_$_AddressModel instance) =>
       'geo': instance.geo,
     };
 
-_$_GeoLocationModel _$$_GeoLocationModelFromJson(Map<String, dynamic> json) =>
-    _$_GeoLocationModel(
+_$GeoLocationModelImpl _$$GeoLocationModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$GeoLocationModelImpl(
       lat: json['lat'] as String,
       lng: json['lng'] as String,
     );
 
-Map<String, dynamic> _$$_GeoLocationModelToJson(_$_GeoLocationModel instance) =>
+Map<String, dynamic> _$$GeoLocationModelImplToJson(
+        _$GeoLocationModelImpl instance) =>
     <String, dynamic>{
       'lat': instance.lat,
       'lng': instance.lng,
     };
 
-_$_CompanyModel _$$_CompanyModelFromJson(Map<String, dynamic> json) =>
-    _$_CompanyModel(
+_$CompanyModelImpl _$$CompanyModelImplFromJson(Map<String, dynamic> json) =>
+    _$CompanyModelImpl(
       name: json['name'] as String,
       catchPhrase: json['catchPhrase'] as String?,
       bs: json['bs'] as String?,
     );
 
-Map<String, dynamic> _$$_CompanyModelToJson(_$_CompanyModel instance) =>
+Map<String, dynamic> _$$CompanyModelImplToJson(_$CompanyModelImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
       'catchPhrase': instance.catchPhrase,
