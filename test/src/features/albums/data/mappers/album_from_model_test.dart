@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:next_photo/src/features/albums/data/mappers/album_from_model.dart';
-import 'package:next_photo/src/features/albums/data/models/album_model.dart';
+import 'package:next_photo/src/common/mappers/album_from_model.dart';
+import 'package:next_photo/src/common/models/album_model.dart';
 import 'package:next_photo/src/features/albums/domain/entities/album.dart';
-import 'package:next_photo/src/features/users/domain/entities/user.dart';
+import 'package:next_photo/common/entities/user.dart';
 
 void main() {
   group(

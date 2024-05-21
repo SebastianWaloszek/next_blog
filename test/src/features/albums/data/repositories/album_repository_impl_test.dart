@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:logger/logger.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:next_photo/src/features/albums/data/repositories/album_repository_impl.dart';
+import 'package:next_photo/common/repositories/album_repository_impl.dart';
 import 'package:next_photo/src/features/albums/data/sources/album/album_data_source.dart';
 import 'package:next_photo/src/features/albums/domain/repositories/album_repository.dart';
 

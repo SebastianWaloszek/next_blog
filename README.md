@@ -56,11 +56,11 @@ The live web demo version of the app can be found [here](https://sebastianwalosz
 
 The project's main [src](lib/src) module contains 4 submodules:
 
-- [app](lib/src/app) - contains code responsible for configuring and running the application.
-- [base](lib/src/base) - contains components that can serve as a basis for any flutter project.
-- [common](lib/src/common) - contains reusable components that are project specific and can be shared by many separate
+- [app](lib/app) - contains code responsible for configuring and running the application.
+- [base](lib/base) - contains components that can serve as a basis for any flutter project.
+- [common](lib/common) - contains reusable components that are project specific and can be shared by many separate
   features.
-- [features](lib/src/features) - contains modules for all the app's main features.
+- [features](lib/features) - contains modules for all the app's main features.
 
 ## Module structure
 

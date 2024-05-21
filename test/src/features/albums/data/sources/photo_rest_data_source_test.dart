@@ -2,9 +2,9 @@ import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:next_photo/src/common/data/http/app_http_client.dart';
-import 'package:next_photo/src/features/albums/data/models/photo_model.dart';
+import 'package:next_photo/src/common/models/photo_model.dart';
 import 'package:next_photo/src/features/albums/data/sources/photo/photo_data_source.dart';
-import 'package:next_photo/src/features/albums/data/sources/photo/photo_rest_data_source.dart';
+import 'package:next_photo/src/common/services/photo_rest_data_source.dart';
 
 import '../../../../../util/fallback_values.dart';
 import '../../../../../util/fixtures/fixture_reader.dart';

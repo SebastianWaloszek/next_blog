@@ -2,7 +2,7 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:next_photo/src/base/domain/entities/result.dart';
-import 'package:next_photo/src/features/users/domain/entities/user.dart';
+import 'package:next_photo/common/entities/user.dart';
 import 'package:next_photo/src/features/users/domain/use_cases/get_user.dart';
 import 'package:next_photo/src/features/users/presentation/cubits/user/user_cubit.dart';
 

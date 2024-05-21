@@ -6,7 +6,21 @@
   "store":"Store",
   "profile": "Profile",
   "likes": "{count, plural, one{1 like} other{{count} likes}}",
+  "@likes": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "viewAllComments": "View all {count} comments",
+  "@viewAllComments": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
   "addAComment": "Add a comment...",
   "anErrorOccurred": "An error occurred please again later."
 }

@@ -13,28 +13,28 @@ dependencies:
   equatable: ^2.0.5
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.5
+  flutter_hooks: ^0.20.5
   flutter_localizations:
     sdk: flutter
   freezed: ^2.5.2
-  get_it: ^7.7.0
+  hooks_riverpod: ^2.5.1
   intl: ^0.19.0
   json_annotation: ^4.9.0
   like_button: ^2.0.5
   logger: ^2.3.0
   photo_view: ^0.15.0
   retrofit: ^4.1.0
+  riverpod_annotation: ^2.3.5
   shared_preferences: ^2.2.3
   timeago: ^3.6.1
 
 dev_dependencies:
-  bloc_test: ^9.1.7
   build_runner: ^2.4.10
+  custom_lint: ^0.6.4
   flutter_launcher_icons: ^0.13.1
   flutter_test:
     sdk: flutter
   index_generator: ^3.4.1
-  injectable_generator: ^2.6.1
   integration_test:
     sdk: flutter
   intl_utils: ^2.8.4
@@ -43,6 +43,8 @@ dev_dependencies:
   mocktail: ^1.0.3
   mocktail_image_network: ^1.1.0
   retrofit_generator: ^8.1.0
+  riverpod_generator: ^2.4.0
+  riverpod_lint: ^2.3.10
 
 flutter:
   uses-material-design: true
@@ -92,7 +94,7 @@ flutter:
 flutter_intl:
   enabled: true
   arb_dir: translations
-  output_dir: lib/src/common/presentation/localization/generated
+  output_dir: lib/common/localization/generated
 
 index_generator:
   exclude:
@@ -102,13 +104,13 @@ index_generator:
     - '**/blocs/**_state.dart'
     - '**/cubits/**_state.dart'
   indexes:
-    - path: lib/src/base
+    - path: lib/base
       include:
         - '**'
       name: base
       library: base
 
-    - path: lib/src/common
+    - path: lib/common
       include:
         - '**'
       exclude:
@@ -118,9 +120,3 @@ index_generator:
         - 'data/http/adapter/web_adapter.dart'
       name: common
       library: common
-
-    - path: lib/src/features
-      include:
-        - '**'
-      name: features
-      library: features

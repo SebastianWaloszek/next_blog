@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:next_photo/src/features/albums/data/mappers/photo_from_model.dart';
-import 'package:next_photo/src/features/albums/data/models/photo_model.dart';
+import 'package:next_photo/src/common/models/photo_model.dart';
 import 'package:next_photo/src/features/albums/domain/entities/album.dart';
 import 'package:next_photo/src/features/albums/domain/entities/photo.dart';
 

@@ -7,9 +7,9 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:next_photo/src/common/presentation/theme/app_icons.dart';
+import 'package:next_photo/common/common.dart';
 
-import 'package:next_photo/src/main_dev.dart' as app;
+import 'package:next_photo/main.dart' as app;
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
